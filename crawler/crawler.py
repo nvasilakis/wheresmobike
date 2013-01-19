@@ -63,6 +63,12 @@ if us != []:
             row_response = urlopen(url)
             row_root = html.parse(row_response)
 
+            postTitleL = row_root.xpath('//h2[@class="postingtitle"]')
+            if postTitleL != []:
+                postTitle = postTitleL[0].text
+            else:
+                postTitle = ""
+
             bodyL = row_root.xpath('//section[@id="postingbody"]')
             if bodyL != []:
                 body = bodyL[0].text
@@ -88,43 +94,48 @@ if us != []:
 
             adRoot = etree.Element('doc')
             
+            
             postIdNode = etree.Element('field', name='postId')
             postIdNode.text = postId
             adRoot.append(postIdNode)
+
+            urlNode = etree.Element('field', name="url")
+            urlNode.text = url
+            adRoot.append(urlNode)
             
             dateIdNode = etree.Element('field', name='date')
             dateIdNode.text = date
             adRoot.append(dateIdNode)
 
-            imgUrlNode = etree.Element('field', name='imageURL')
-            if imgUrl != []:
-                imgUrlNode.text = imgUrl[0]
-            adRoot.append(imgUrlNode)
-
-#            imgUrlsNode = etree.Element('imgUrls')
-#            for imgU in imgUrl:
-#                imgUNode = etree.Element('imgURL')
-#                imgUNode.text = imgU
-#                imgUrlsNode.append(imgUNode)
-#            adRoot.append(imgUrlsNode)
+            for imgU in imgUrl:
+                imgUrlNode = etree.Element('field', name='imageURL')
+                imgUrlNode.text = imgU
+                adRoot.append(imgUrlNode)
 
             bodyNode = etree.Element('field', name='body')
             bodyNode.text = body
             adRoot.append(bodyNode)
 
+            postTitleNode = etree.Element('field', name='title')
+            postTitleNode.text = postTitle
+            adRoot.append(postTitleNode)
+
             locationNode = etree.Element('field', name='location')
             locationNode.text = location
             adRoot.append(locationNode)
 
+
             globalRoot.append(adRoot)
 
-        print "done with city"
-        cityXML = etree.tostring(globalRoot)
+        print ("done with city: " + cityName)
+        cityXML = etree.tostring(globalRoot, pretty_print="true")
+        print cityXML
         req = Request(url=POST_URL,
-                              data=cityXML,
-                              headers={'Content-Type': 'application/xml'})
+                      data=cityXML,
+                      headers={'Content-Type': 'application/xml'})
         post_response = urlopen(req)
         print post_response
+#        print cityXML
 
         craigDict[city] = newLast
         storeCraig(craigDict)
