@@ -1,0 +1,14 @@
+%YAML:1.0
+bikes:
+   -
+      url: "http://philadelphia.craigslist.org/bik/3555914080.html"
+      color: black
+      type: road
+      make_or_model: [ Orbea, Onix ]
+      images: 
+         - "3K83L83N65N95L85J8d1i2a91fa52d0f41a49.jpg"
+         - "3L13N13He5E75H95M7d1i802642a6071b1ba9.jpg"
+         - "3Mb3J23N25I15E45M8d1i7cad704340f817dd.jpg"
+
+
+
