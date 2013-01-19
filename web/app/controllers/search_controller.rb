@@ -1,7 +1,10 @@
 class SearchController < ApplicationController
   def search
     @picture = params[:picture]
+    @description = params[:description]
 
+    # Stub results to test search
+    # TODO: Use search script here
     @results =
       [
        {
