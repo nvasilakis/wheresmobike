@@ -3,7 +3,7 @@ bikes:
  -
    url: "http://auburn.craigslist.org/bik/3515537166.html"
    color: silver
-   type: 
+   type: ""
    make_or_model: [Raleigh]
    images: 
      - "3I23F43N35L95I75K3d113d69eb5c031d1ffd.jpg"
@@ -14,7 +14,7 @@ bikes:
  -
    url: "http://auburn.craigslist.org/bik/3515574816.html"
    color: red
-   type: 
+   type: ""
    make_or_model: [Klein]
    images: 
      - "3Gc3Hb3la5Ne5E55H7d118ea90667028d1d91.jpg"
@@ -25,60 +25,60 @@ bikes:
  -
    url: "http://auburn.craigslist.org/bik/3531812162.html"
    color: yellow
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3K63La3N15Ea5Hf5M6d1825065d5ee4741fb6.jpg"
      - "3K13Le3Md5L45E55Fed18595761f56aaa1cbb.jpg"
  -
    url: "http://auburn.craigslist.org/bik/3551247064.html"
    color: blue
-   type: 
+   type: ""
    make_or_model: [Performer]
    images: 
      - "3E93I63J95Gf5K25J5d1g6ba1c667edc81161.jpg"
  -
    url: "http://auburn.craigslist.org/bik/3537346265.html"
    color: 
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3K23F53H55N65H95Mdd1a8875266a938a12a8.jpg"
      - "3Kc3Fe3I95Ne5L75Ked1a0220090fdd191b00.jpg"
  -
    url: "http://auburn.craigslist.org/bik/3545167632.html"
    color: black
-   type: 
+   type: ""
    make_or_model: [Thruster]
    images: 
      - "3K53ob3Nf5N75Fb5Mdd1ef43a0fdbb1a41d25.jpg"
  -
    url: "http://auburn.craigslist.org/bik/3543105299.html"
    color: red
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3Ga3Ic3ld5I85G95H7d1ddd03e1ad5a9b1e2e.jpg"
  -
    url: "http://auburn.craigslist.org/bik/3536837280.html"
    color: purple
-   type: 
+   type: ""
    make_or_model: [Magna]
    images: 
      - "3K53L73J15L25I75F5d1a4b25e35f11b21815.jpg"
  -
    url: "http://bham.craigslist.org/bik/3496417663.html"
    color: 
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3Ka3I23Nf5I85G75H6ccm4fbc20a26e2015a8.jpg"
      - "3G73I13J95G65Z65Jdccm4591e4f44bdc1a1e.jpg"
  -
    url: "http://bham.craigslist.org/bik/3529522564.html"
    color: silver
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3E83I43H85F85J75Mcd17f5ab1e7042a7172f.jpg"
      - "3Kd3F43N85Ee5Ha5M7d17d3f469f64e561673.jpg"
@@ -87,7 +87,7 @@ bikes:
  -
    url: "http://bham.craigslist.org/bik/3512458202.html"
    color: blue 
-   type: 
+   type: ""
    make_or_model: [Townie]
    images: 
      - "3Kd3I43L55Y55G55H1d18ebd32a77d0a810e1.jpg"
@@ -98,15 +98,15 @@ bikes:
  -
    url: "http://bham.craigslist.org/bik/3534737105.html"
    color: 
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3Ie3N23lb5Lb5Ke5J6d19b64a83fba19e12a7.jpg"
  -
    url: "http://bham.craigslist.org/bik/3536898070.html"
    color: black
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3E43G13L95N35G25Hfd1af6a6c958cd731212.jpg"
      - "3Eb3k93Jb5Id5Ge5Hfd1a6f0b8e4a696c10d0.jpg"
@@ -115,23 +115,23 @@ bikes:
  -
    url: "http://bham.craigslist.org/bik/3555250096.html"
    color: white
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3Kf3F73lc5I65L45J5d1i0830fd384f691d97.jpg"
  -
    url: "http://bham.craigslist.org/bik/3513368227.html"
    color: black
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3I63M63N75Ib5Nd5H5ccv8c89b06759351a32.jpg"
      - "3Id3Me3N55L85O45Gcccv2d86561991f918b7.jpg"
  -
    url: "http://bham.craigslist.org/bik/3494204875.html"
    color: red
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3E53K33Jb5F45Ha5J1ccl0a16ab5beb761343.jpg"
      - "3Md3L73Nf5L55G65Efccl5a5722bc203b1888.jpg"
@@ -144,28 +144,28 @@ bikes:
  -
    url: "http://bham.craigslist.org/bik/3498931966.html"
    color: red
-   type: 
+   type: ""
    make_or_model: [Outpost]
    images: 
      - "3Gb3K13Ia5N75Gc5Jbcco731748e2ff8d1c05.jpg"
  -
    url: "http://dothan.craigslist.org/bik/3507338218.html"
    color: red
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3K93L13p85N85L35Efccs362d455fc0f3107a.jpg"
  -
    url: "http://dothan.craigslist.org/bik/3555661920.html"
    color: blue
-   type: 
+   type: ""
    make_or_model: [Roadmaster]
    images: 
      - "3E63Jf3l95N95K55H6d1i92c9106408051933.jpg"
  -
    url: "http://dothan.craigslist.org/bik/3547795766.html"
    color: red
-   type: 
+   type: ""
    make_or_model: [Next]
    images: 
      - "3E13G53oe5I75Nd5F7d1f03588cff49271a1a.jpg"
@@ -177,29 +177,29 @@ bikes:
  -
    url: "http://dothan.craigslist.org/bik/3538476443.html"
    color: silver
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3Ed3m63J35L45E85Jed1bc590b7459eee174a.jpg"
      - "3Kb3F43Mc5Ga5K95M1d1be7e18ed5f3f61262.jpg"
  -
    url: "http://dothan.craigslist.org/bik/3548005951.html"
    color: red
-   type: 
+   type: ""
    make_or_model: [Speed]
    images: 
      - "3Ed3M33H35Ic5Hc5J7d1f099da2d55b6e1ff4.jpg"
  -
    url: "http://shoals.craigslist.org/bik/3552176758.html"
    color: blue
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3E73Ke3Lb5N15L65Kbd1h099e1f66add31f3f.jpg"
  -
    url: "http://shoals.craigslist.org/bik/3536978616.html"
    color: red
-   type: 
+   type: ""
    make_or_model: [Ferrari]
    images: 
      - "3k43Le3oe5L55E15Kad1a35105d5083b81cc7.jpg"
@@ -208,7 +208,7 @@ bikes:
  -
    url: "http://shoals.craigslist.org/bik/3536933284.html"
    color: red
-   type: 
+   type: ""
    make_or_model: [Ferrari]
    images: 
      - "3G13F23Ja5Id5G75Mfd1aa36260a261611f94.jpg"
@@ -217,16 +217,16 @@ bikes:
  -
    url: "http://shoals.craigslist.org/bik/3535137324.html"
    color: red
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3na3L73F55N85Kb5M5d198d83cd4266671410.jpg"
      - "3G53J43oc5Fc5J15M4d1960aa95706f6010f4.jpg"
  -
    url: "http://shoals.craigslist.org/bik/3530315802.html"
    color: purple
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3K43M13N15N85K35H6d174c45f667489b11a4.jpg"
      - "3M33I23N45I95G55E8d17e505ca53db7d165e.jpg"
@@ -236,8 +236,8 @@ bikes:
  -
    url: "http://shoals.craigslist.org/bik/3515380686.html"
    color: silver
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3Ia3p43ld5I35N25F6d111cf797f8189b1303.jpg"
      - "3E73F23J25N35Hf5Mdd1136dd35dc74cf1fb4.jpg"
@@ -248,15 +248,15 @@ bikes:
  -
    url: "http://shoals.craigslist.org/bik/3503647814.html"
    color: blue
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3Kc3L43H45I45N15F6ccrfe0807119f701d04.jpg"
  -
    url: "http://shoals.craigslist.org/bik/3490082899.html"
    color: red
-   type: 
-   make_or_model: 
+   type: ""
+   make_or_model: []
    images: 
      - "3F53I63J65Lc5E95Jaccj58beaa99c85716dc.jpg"
      - "3Ee3Kb3Na5O45M85Jbccj7761c76934f613c2.jpg"
