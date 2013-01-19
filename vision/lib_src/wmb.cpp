@@ -137,7 +137,7 @@ bool WmbVision::process(const MatColor & img)
   waitKey(0);
 #endif
 
-  return false;
+  return true;
 }
 
 cv::Mat_<double> WmbVision::getFeatures() const
