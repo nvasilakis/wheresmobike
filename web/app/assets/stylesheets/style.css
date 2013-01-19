@@ -1,3 +1,7 @@
+#search .input-large {
+    margin-bottom: 10px;
+}
+
 #loading-search {
     text-align: center;
 }

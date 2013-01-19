@@ -15,13 +15,14 @@ var WheresMoBike = {
 
     hideLoadingAnimation: function () {
         var form = $(this),
+            search = $('#search'),
             loadingBox = $('#loading-search');
         if (WheresMoBike.loadingAnimationComplete) {
             loadingBox.fadeOut();
             WheresMoBike.loadingAnimationComplete = false;
         } else {
             form.stop();
-            form.hide();
+            search.hide();
             loadingBox.stop();
             loadingBox.hide();
         }
