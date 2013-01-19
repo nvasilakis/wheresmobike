@@ -19,16 +19,12 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 # use new C++ standard, such as chrono library, and lots of new syntax
-# also, turn off RTTI and exceptions
 IF(CMAKE_COMPILER_IS_GNUCXX)
   SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 ENDIF(CMAKE_COMPILER_IS_GNUCXX)
 
-# OpenMP support
-find_package(OpenMP REQUIRED)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
-
+# shared libs to cut back on having to re-link every recompilation
+OPTION(BUILD_SHARED_LIBS "Build thelibraries shared." ON)
 # library sources
 add_subdirectory(lib_src)
 

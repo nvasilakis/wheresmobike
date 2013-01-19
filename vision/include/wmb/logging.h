@@ -3,6 +3,9 @@
 #include <cstdlib>
 #include <iostream>
 
+namespace wmb
+{
+
 #define MSG_BASE(stream, body) \
   do { try { \
     stream << __FILE__ << ":" << __FUNCTION__ << "():" << __LINE__ << ": " \
@@ -29,3 +32,4 @@
 #define ERROR(var) ERROR_STR(#var ": " << var)
 #define FATAL(var) FATAL_STR(#var ": " << var)
 
+} // namespace wmb
