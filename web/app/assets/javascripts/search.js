@@ -74,5 +74,17 @@ var WheresMoBike = {
             filename = filename.replace(/^.+\\/, '');
             $('#picture-path').text(filename);
         });
+    $(function () {
+        $('.field label a').tooltip({
+            placement: 'right',
+            title: function () {
+                var field = $(this).closest('.field');
+                return field.children('.field-description').text();
+            }
+        });
+
+        $('.field input[name=date]').datepicker();
+
+    });
 
 })(jQuery);

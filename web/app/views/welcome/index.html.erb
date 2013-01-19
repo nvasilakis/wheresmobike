@@ -1,7 +1,7 @@
 <div class="page-header">
   <h1>WheresMoBike</h1>
 
-  <p>WheresMoBike is a tool that helps people to find their stolen
+  <p>WheresMoBike is a service to help people looking for their stolen
     bikes. <a href="/about">Learn more »</a></p>
 </div>
 
@@ -16,14 +16,26 @@
                :remote => true,
                :method => :post do %>
 
-  <div>
-    <%= label_tag :description %>
-    <input type="text" class="input-xxlarge" />
+  <div class="field">
+    <label for="description">
+      Description
+      <a href="#" class="icon-question-sign"> </a>
+    </label>
+    <div class="field-description">
+      E.g. color, model, brand, etc.
+    </div>
+    <input name="description" type="text" class="input-xxlarge" />
   </div>
 
-  <div>
+  <div class="field">
     <!-- Try to make the file upload dialog less horrendous... -->
-    <%= label_tag :picture %>
+    <label for="picture">
+      Picture
+      <a class="icon-question-sign"> </a>
+    </label>
+    <div class="field-description">
+      Add a picture of your bike to make the search more accurate.
+    </div>
     <input type="file" name="picture" style="display: none;" />
     <div class="input-append">
       <div class="uneditable-input input-large">
@@ -31,6 +43,18 @@
       </div>
       <span id="picture-select" class="btn">Select file</span>
     </div>
+  </div>
+
+  <div class="field">
+    <label for="date">
+      Date of Theft
+      <a class="icon-question-sign"> </a>
+    </label>
+    <div class="field-description">
+      When your bike was stolen, approximately
+    </div>
+    <input name="date" type="text"
+           value="<%= calendar_date Date.today %>" />
   </div>
 
   <div><%= submit_tag 'Find my bike!', :class => 'btn' %></div>

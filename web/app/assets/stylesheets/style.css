@@ -2,6 +2,10 @@
     margin-bottom: 10px;
 }
 
+#search .input-append {
+    margin-bottom: 0;
+}
+
 #loading-search {
     text-align: center;
 }
@@ -28,4 +32,8 @@
 
 #search-results > li:last-child {
     border-bottom: none;
+}
+
+#search .field-description {
+    display: none;
 }
