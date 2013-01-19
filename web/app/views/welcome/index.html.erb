@@ -6,11 +6,15 @@
 
 
 <%= form_tag '/search',
+             :id => 'search-form',
              :multipart => true,
              :remote => true,
              :method => :post do %>
 
-<div><%= file_field_tag :picture %></div>
+<div>
+  <%= label_tag :file %><%= file_field_tag :picture %>
+</div>
+
 <div><%= submit_tag 'Find my bike!', :class => 'btn' %></div>
 
 <% end %>

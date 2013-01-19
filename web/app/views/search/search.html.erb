@@ -1,1 +1,5 @@
-Got file: <%= @picture.tempfile %>
+<% if @picture.tempfile.present? %>
+  Got file: <%= @picture.tempfile %>
+<% else %>
+  No file received
+<% end %>
