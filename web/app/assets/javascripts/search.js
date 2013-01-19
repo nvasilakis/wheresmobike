@@ -27,23 +27,30 @@ var WheresMoBike = {
         }
     },
 
-    addSearchResults: function (results) {
-        console.log('Added results!');
+    showSearchResults: function (results) {
+        var resultsDiv = $('#search-results');
+        var resultsUl = resultsDiv.children('ul');
+
+        resultsUl.empty();
+        results.forEach(function (result) {
+            resultsUl.append(WheresMoBike.showSearchResult(result));
+        });
+
+        resultsDiv.fadeIn();
+    },
+
+    showSearchResult: function (result) {
+        return '<li><span>' + result.title + '</span> ' + result.body + '</li>';
     }
 
 };
 
 (function($) {
 
-    var loadingAnimationComplete = false;
-
     $(document)
         .delegate('#search-form', 'ajax:before',
                   WheresMoBike.showLoadingAnimation)
         .delegate('#search-form', 'ajax:complete',
-                  WheresMoBike.hideLoadingAnimation)
-        .delegate('#search-form', 'ajax:success', function () {
-            console.log('success');
-        });
+                  WheresMoBike.hideLoadingAnimation);
 
 })(jQuery);
