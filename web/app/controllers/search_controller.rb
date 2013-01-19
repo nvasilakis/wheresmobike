@@ -4,7 +4,7 @@ class SearchController < ApplicationController
   def search
     @picture = params[:picture]
     @description = params[:description]
-    @date = Date.strptime(params[:date], '%m/%d/%Y')
+    @date = Date.strptime(params[:date], '%m/%d/%Y').to_time
 
     @results =
       Searcher.search(:picture => @picture,
