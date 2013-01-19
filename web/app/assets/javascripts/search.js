@@ -33,9 +33,15 @@ var WheresMoBike = {
         var resultsUl = resultsDiv.children('ul');
 
         resultsUl.empty();
-        results.forEach(function (result) {
-            resultsUl.append(WheresMoBike.showSearchResult(result));
-        });
+
+        if (results.length == 0) {
+            resultsDiv.children('.no-results').show();
+        } else {
+            resultsDiv.children('.no-results').hide();
+            results.forEach(function (result) {
+                resultsUl.append(WheresMoBike.showSearchResult(result));
+            });
+        }
 
         resultsDiv.fadeIn();
     },
