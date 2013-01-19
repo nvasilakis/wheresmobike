@@ -5,3 +5,8 @@
 #loading-search .image {
     margin-top: 1.5em;
 }
+
+/* HACK, the order is wrong in the Bootstrap css */
+#search input[type=file] {
+    position: absolute;
+}
