@@ -41,10 +41,17 @@ var WheresMoBike = {
 
     showSearchResult: function (result) {
         return '<li class="row">' +
-            '<img class="span2" src="' + result.picture + '" />' +
-            '<a href="' + result.url + '" ' +
-                'class="title">' + result.title + '</a>' +
-            '<span class="body">' + result.body + '</span>' +
+            '<div class="span2">' +
+              '<a target="_blank" href="' + result.url + '">' +
+                '<img src="' + result.picture + '" />' +
+              '</a>' +
+            '</div>' +
+            '<div class="span10">' +
+              '<div class="title">' +
+                '<a target="_blank" href="' + result.url + '">' + result.title + '</a>' +
+              '</div>' +
+              '<span class="body">' + result.body + '</span>' +
+            '</div>' +
             '</li>';
     }
 
