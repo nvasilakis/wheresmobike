@@ -35,6 +35,8 @@ int main(int argc, char **argv)
 
   WmbVision wmb(150.0, 75.0);
 
+  FileStorage fs("features.yaml", FileStorage::WRITE);
+
   for(Bike &bike : bikes) {
     for(auto img : bike.images) {
       bool success = wmb.process(img.second);
@@ -44,6 +46,7 @@ int main(int argc, char **argv)
         bf.features = wmb.getFeatures();
         INFO(bf.features(0));
         INFO(bf.features(1));
+        fs << bf;
       } else {
         WARN_STR("Could not process bike image " << img.first);
       }

@@ -19,7 +19,12 @@ namespace wmb
   {
     std::string id;
     cv::Mat_<double> features;
+
+    void read(const cv::FileNode &n);
+    void write(cv::FileStorage &fs) const;
   };
+
+  void write(cv::FileStorage& fs, const std::string&, const BikeFeatures& bf);
 
 }
 
