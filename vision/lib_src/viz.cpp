@@ -69,14 +69,34 @@ static void drawCircle(MatColor &rgb, const Vec3f &ctrSz, const Scalar &color)
   circle(rgb, c, r, color, 1, CV_AA, 4);
 }
 
-void displayCircles(const MatGray &img, const Circles &circles)
+void displayCircles(const MatGray &img, const Circles &circles, const string &name)
 {
   MatColor rgb = makeRgb(img);
   for(const Vec3f &circle : circles) {
     drawCircle(rgb, circle, blue);
     drawCircle(rgb, Vec3f(circle[0], circle[1], 2), red);
   }
-  imshow("circles", rgb);
+  imshow(name+" circles", rgb);
+}
+static void drawSegment(MatColor &rgb, float x0, float y0, float x1, float y1, const Scalar &color)
+{
+  Point pt0(roundToNearestInt(x0*16.0f), roundToNearestInt(y0*16.0f));
+  Point pt1(roundToNearestInt(x1*16.0f), roundToNearestInt(y1*16.0f));
+  line(rgb, pt0, pt1, color, 1, CV_AA, 4);
+}
+
+static void drawSegment(MatColor &rgb, const Vec4i &p, const Scalar &color)
+{
+  line(rgb, Point(p[0], p[1]), Point(p[2], p[3]), color, 1, CV_AA, 0);
+}
+
+void displayLines(const MatGray &img, const Lines &lines, const string &name)
+{
+  MatColor rgb = makeRgb(img);
+  for(const Vec4i &line : lines) {
+    drawSegment(rgb, line, green);
+  }
+  imshow(name+" lines", rgb);
 }
 
 } // namespace wmb

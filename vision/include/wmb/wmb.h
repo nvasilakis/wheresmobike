@@ -20,7 +20,7 @@ namespace wmb
 typedef cv::Mat_<cv::Vec3b> MatColor;
 typedef cv::Mat_<uint8_t> MatGray;
 typedef std::vector<cv::Vec3f> Circles;
-typedef std::vector<cv::Vec2f> Lines;
+typedef std::vector<cv::Vec4i> Lines;
 typedef std::vector<std::string> Strings;
 typedef std::unordered_map<std::string, MatColor> Images;
 
@@ -44,11 +44,15 @@ class WmbVision
   MatColor small_;
   MatGray smallGray_;
   MatGray canny_;
-  Circles circles_, circlesR_;
+  Circles circlesL_, circlesR_, allCircles_, wheels_;
   Lines lines_;
+  double wheelRadius_;
 
   const double cannyThreshHigh_;
   const double cannyThreshLow_;
+
+  bool findWheels();
+  void proprocessImage(const MatColor& img);
 
 public:
   WmbVision(const double cannyThresh0, const double cannyThresh1)

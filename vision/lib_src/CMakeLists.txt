@@ -2,6 +2,8 @@ add_library(${PROJECT_NAME}
   wmb.cpp
   bike_persistance.cpp
   viz.cpp
+  wmb_params.cpp
+  result.cpp
 )
 target_link_libraries(${PROJECT_NAME}
   ${OpenCV_LIBS}

@@ -14,3 +14,4 @@ lib*.so
 yaml_test
 .settings
 trainer
+magic

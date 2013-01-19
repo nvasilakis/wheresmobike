@@ -99,7 +99,7 @@ Bikes loadBikes(const char * const filename)
   for(int i=0; i<bikesNode.size(); ++i) {
     INFO(i);
     const auto &bn = bikesNode[i];
-    auto &b = bikes[i];
+    Bike &b = bikes[i];
     b.read(bn);
   }
 
