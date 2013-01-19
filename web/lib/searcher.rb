@@ -3,14 +3,15 @@ require 'nokogiri'
 
 module Searcher
 
-  # TODO: Move to config?
-  SEARCH_URL = 'http://ec2-50-19-164-82.compute-1.amazonaws.com:8080/solr/core0/select'
+  def self.solr_url(url)
+    @solr_url = url
+  end
 
   def self.search(options={})
-    solr_uri = URI(SEARCH_URL)
+    solr_uri = URI(@solr_url)
     solr_params = {
       :q => options[:description] + " AND " +
-            "date:[* TO #{options[:date].iso8601}]",
+            "date:[#{options[:date].iso8601} TO NOW]",
       :rows => 20,
       :indent => 'on'
     }
