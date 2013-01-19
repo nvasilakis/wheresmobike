@@ -2,6 +2,10 @@
     margin-bottom: 10px;
 }
 
+#search .input-append {
+    margin-bottom: 0;
+}
+
 #loading-search {
     text-align: center;
 }

@@ -45,6 +45,18 @@
     </div>
   </div>
 
+  <div class="field">
+    <label for="date">
+      Date
+      <a class="icon-question-sign"> </a>
+    </label>
+    <div class="field-description">
+      Date of theft
+    </div>
+    <input name="date" type="text"
+           value="<%= calendar_date Date.today %>" />
+  </div>
+
   <div><%= submit_tag 'Find my bike!', :class => 'btn' %></div>
 
   <% end %>

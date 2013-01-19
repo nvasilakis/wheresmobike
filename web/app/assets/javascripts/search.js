@@ -83,6 +83,8 @@ var WheresMoBike = {
             }
         });
 
+        $('.field input[name=date]').datepicker();
+
     });
 
 })(jQuery);
