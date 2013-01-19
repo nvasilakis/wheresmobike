@@ -1,7 +1,31 @@
+#search .input-large {
+    margin-bottom: 10px;
+}
+
 #loading-search {
     text-align: center;
 }
 
 #loading-search .image {
     margin-top: 1.5em;
+}
+
+#search-results ul {
+    margin: 0;
+}
+
+#search-results li {
+    display: block;
+    margin-bottom: 0 0 20px 0;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#search-results li .title {
+    font-size: 16pt;
+    margin-bottom: 7px;
+}
+
+#search-results > li:last-child {
+    border-bottom: none;
 }

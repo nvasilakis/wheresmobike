@@ -1,6 +1,9 @@
-<h1>WheresMoBike</h1>
+<div class="page-header">
+  <h1>WheresMoBike</h1>
 
-<p>ASDF</p>
+  <p>WheresMoBike is a tool that helps people to find their stolen
+    bikes. <a href="/about">Learn more »</a></p>
+</div>
 
 <div id="search">
 
@@ -14,11 +17,16 @@
                :method => :post do %>
 
   <div>
+    <%= label_tag :description %>
+    <input type="text" class="input-xxlarge" />
+  </div>
+
+  <div>
     <!-- Try to make the file upload dialog less horrendous... -->
-    <%= label_tag :file %>
+    <%= label_tag :picture %>
     <input type="file" name="picture" style="display: none;" />
     <div class="input-append">
-      <div class="uneditable-input span3">
+      <div class="uneditable-input input-large">
         <span id="picture-path"></span>
       </div>
       <span id="picture-select" class="btn">Select file</span>

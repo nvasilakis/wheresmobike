@@ -15,13 +15,14 @@ var WheresMoBike = {
 
     hideLoadingAnimation: function () {
         var form = $(this),
+            search = $('#search'),
             loadingBox = $('#loading-search');
         if (WheresMoBike.loadingAnimationComplete) {
             loadingBox.fadeOut();
             WheresMoBike.loadingAnimationComplete = false;
         } else {
             form.stop();
-            form.hide();
+            search.hide();
             loadingBox.stop();
             loadingBox.hide();
         }
@@ -40,7 +41,19 @@ var WheresMoBike = {
     },
 
     showSearchResult: function (result) {
-        return '<li><span>' + result.title + '</span> ' + result.body + '</li>';
+        return '<li class="row">' +
+            '<div class="span2">' +
+              '<a target="_blank" href="' + result.url + '">' +
+                '<img src="' + result.picture + '" />' +
+              '</a>' +
+            '</div>' +
+            '<div class="span10">' +
+              '<div class="title">' +
+                '<a target="_blank" href="' + result.url + '">' + result.title + '</a>' +
+              '</div>' +
+              '<span class="body">' + result.body + '</span>' +
+            '</div>' +
+            '</li>';
     }
 
 };
