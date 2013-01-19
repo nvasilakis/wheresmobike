@@ -2,7 +2,7 @@
 
 <p>ASDF</p>
 
-<h2>Choose a file</h2>
+<h2>Tell us about your bike</h2>
 
 
 <%= form_tag '/search',
@@ -18,3 +18,10 @@
 <div><%= submit_tag 'Find my bike!', :class => 'btn' %></div>
 
 <% end %>
+
+<div id="loading-search" style="display: none;">
+Please, wait while we look for similar bikes...
+<div class="image"><%= image_tag 'loading-search.gif' %></div>
+</div>
+
+<div id="search-results" style="display: none;">Found Everything!</div>
