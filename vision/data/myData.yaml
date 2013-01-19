@@ -1,0 +1,264 @@
+%YAML:1.0
+bikes:
+ -
+   url: "http://auburn.craigslist.org/bik/3515537166.html"
+   color: silver
+   type: 
+   make_or_model: [Raleigh]
+   images: 
+     - "3I23F43N35L95I75K3d113d69eb5c031d1ffd.jpg"
+     - "3E73G73N35L45E45J5d1119eda5efd12f1ef4.jpg"
+     - "3K23m53Nc5I45Fd5J9d11efde79c8c7dd1cd6.jpg"
+     - "3L63I53J95Nc5Ea5Jed112681b05d6a9616d4.jpg"
+     - "3Ea3Kf3Jf5I65N45Kdd1b72bef39adaff1fb5.jpg"
+ -
+   url: "http://auburn.craigslist.org/bik/3515574816.html"
+   color: red
+   type: 
+   make_or_model: [Klein]
+   images: 
+     - "3Gc3Hb3la5Ne5E55H7d118ea90667028d1d91.jpg"
+     - "3K53L33N55Ge5F65Hbd111d873684eee51564.jpg"
+     - "3L33J83N85N45G15Efd113351a6d304af13ff.jpg"
+     - "3Eb3L63H25Lb5Ed5M6d11488458cd1ce01ea2.jpg"
+     - "3Lc3I83Nf5Kb5P25Mbd11bac1d66a9e621498.jpg"
+ -
+   url: "http://auburn.craigslist.org/bik/3531812162.html"
+   color: yellow
+   type: 
+   make_or_model: 
+   images: 
+     - "3K63La3N15Ea5Hf5M6d1825065d5ee4741fb6.jpg"
+     - "3K13Le3Md5L45E55Fed18595761f56aaa1cbb.jpg"
+ -
+   url: "http://auburn.craigslist.org/bik/3551247064.html"
+   color: blue
+   type: 
+   make_or_model: [Performer]
+   images: 
+     - "3E93I63J95Gf5K25J5d1g6ba1c667edc81161.jpg"
+ -
+   url: "http://auburn.craigslist.org/bik/3537346265.html"
+   color: 
+   type: 
+   make_or_model: 
+   images: 
+     - "3K23F53H55N65H95Mdd1a8875266a938a12a8.jpg"
+     - "3Kc3Fe3I95Ne5L75Ked1a0220090fdd191b00.jpg"
+ -
+   url: "http://auburn.craigslist.org/bik/3545167632.html"
+   color: black
+   type: 
+   make_or_model: [Thruster]
+   images: 
+     - "3K53ob3Nf5N75Fb5Mdd1ef43a0fdbb1a41d25.jpg"
+ -
+   url: "http://auburn.craigslist.org/bik/3543105299.html"
+   color: red
+   type: 
+   make_or_model: 
+   images: 
+     - "3Ga3Ic3ld5I85G95H7d1ddd03e1ad5a9b1e2e.jpg"
+ -
+   url: "http://auburn.craigslist.org/bik/3536837280.html"
+   color: purple
+   type: 
+   make_or_model: [Magna]
+   images: 
+     - "3K53L73J15L25I75F5d1a4b25e35f11b21815.jpg"
+ -
+   url: "http://bham.craigslist.org/bik/3496417663.html"
+   color: 
+   type: 
+   make_or_model: 
+   images: 
+     - "3Ka3I23Nf5I85G75H6ccm4fbc20a26e2015a8.jpg"
+     - "3G73I13J95G65Z65Jdccm4591e4f44bdc1a1e.jpg"
+ -
+   url: "http://bham.craigslist.org/bik/3529522564.html"
+   color: silver
+   type: 
+   make_or_model: 
+   images: 
+     - "3E83I43H85F85J75Mcd17f5ab1e7042a7172f.jpg"
+     - "3Kd3F43N85Ee5Ha5M7d17d3f469f64e561673.jpg"
+     - "3G63Mf3J75Gb5E45F7d1747e5d5f7fa981211.jpg"
+     - "3Ee3K63Ff5L65E15H9d17129bdc7880281626.jpg"
+ -
+   url: "http://bham.craigslist.org/bik/3512458202.html"
+   color: blue 
+   type: 
+   make_or_model: [Townie]
+   images: 
+     - "3Kd3I43L55Y55G55H1d18ebd32a77d0a810e1.jpg"
+     - "3M63Nd3Hf5G65H85J8d18bafdd8cd77d112f4.jpg"
+     - "3E63Jf3Hd5L25Ed5M8d182eff569b0df61bc6.jpg"
+     - "3K23G43H45W55K15H1d1837daafec3a7f16bb.jpg"
+     - "3G73L53Ma5Nb5E95Fed18ada43a300c14118a.jpg"
+ -
+   url: "http://bham.craigslist.org/bik/3534737105.html"
+   color: 
+   type: 
+   make_or_model: 
+   images: 
+     - "3Ie3N23lb5Lb5Ke5J6d19b64a83fba19e12a7.jpg"
+ -
+   url: "http://bham.craigslist.org/bik/3536898070.html"
+   color: black
+   type: 
+   make_or_model: 
+   images: 
+     - "3E43G13L95N35G25Hfd1af6a6c958cd731212.jpg"
+     - "3Eb3k93Jb5Id5Ge5Hfd1a6f0b8e4a696c10d0.jpg"
+     - "3E53M73H95N25G15F2d1a9a3941ca83c117c9.jpg"
+     - "3Ge3Me3Nd5N25I45Kdd1a6ac8b332fcb11f3e.jpg"
+ -
+   url: "http://bham.craigslist.org/bik/3555250096.html"
+   color: white
+   type: 
+   make_or_model: 
+   images: 
+     - "3Kf3F73lc5I65L45J5d1i0830fd384f691d97.jpg"
+ -
+   url: "http://bham.craigslist.org/bik/3513368227.html"
+   color: black
+   type: 
+   make_or_model: 
+   images: 
+     - "3I63M63N75Ib5Nd5H5ccv8c89b06759351a32.jpg"
+     - "3Id3Me3N55L85O45Gcccv2d86561991f918b7.jpg"
+ -
+   url: "http://bham.craigslist.org/bik/3494204875.html"
+   color: red
+   type: 
+   make_or_model: 
+   images: 
+     - "3E53K33Jb5F45Ha5J1ccl0a16ab5beb761343.jpg"
+     - "3Md3L73Nf5L55G65Efccl5a5722bc203b1888.jpg"
+     - "3Ea3Ga3H95Na5G35Efccld2dc81e7b42213d6.jpg"
+     - "3E53Ib3Nc5Ga5V25H1cclebdd3795937114e1.jpg"
+     - "3Kc3Ib3N55L55G75T0ccl61bb20c15a561790.jpg"
+     - "3G53M53Jc5G45E85Mcccle71a8ea527621121.jpg"
+     - "3Ie3F43N15L55G85Meccl761d170eb3921c62.jpg"
+     - "3E63K63M25L85Nd5F8ccl76febbd057fd14cb.jpg"
+ -
+   url: "http://bham.craigslist.org/bik/3498931966.html"
+   color: red
+   type: 
+   make_or_model: [Outpost]
+   images: 
+     - "3Gb3K13Ia5N75Gc5Jbcco731748e2ff8d1c05.jpg"
+ -
+   url: "http://dothan.craigslist.org/bik/3507338218.html"
+   color: red
+   type: 
+   make_or_model: 
+   images: 
+     - "3K93L13p85N85L35Efccs362d455fc0f3107a.jpg"
+ -
+   url: "http://dothan.craigslist.org/bik/3555661920.html"
+   color: blue
+   type: 
+   make_or_model: [Roadmaster]
+   images: 
+     - "3E63Jf3l95N95K55H6d1i92c9106408051933.jpg"
+ -
+   url: "http://dothan.craigslist.org/bik/3547795766.html"
+   color: red
+   type: 
+   make_or_model: [Next]
+   images: 
+     - "3E13G53oe5I75Nd5F7d1f03588cff49271a1a.jpg"
+     - "3G83Kb3Nd5I25Hd5J1d1f99b974c1f6dc1d14.jpg"
+     - "3I83M43F95N35L25Jad1fdea348650a341e5b.jpg"
+     - "3E73G43H15Le5G75F3d1fe6b09df5857e14ef.jpg"
+     - "3K23M23Hf5L75G35Had1f4e2968ab3f891a13.jpg"
+     - "3N43o63H25L95M65Jdd1fb00e778fb6171f4f.jpg"
+ -
+   url: "http://dothan.craigslist.org/bik/3538476443.html"
+   color: silver
+   type: 
+   make_or_model: 
+   images: 
+     - "3Ed3m63J35L45E85Jed1bc590b7459eee174a.jpg"
+     - "3Kb3F43Mc5Ga5K95M1d1be7e18ed5f3f61262.jpg"
+ -
+   url: "http://dothan.craigslist.org/bik/3548005951.html"
+   color: red
+   type: 
+   make_or_model: [Speed]
+   images: 
+     - "3Ed3M33H35Ic5Hc5J7d1f099da2d55b6e1ff4.jpg"
+ -
+   url: "http://shoals.craigslist.org/bik/3552176758.html"
+   color: blue
+   type: 
+   make_or_model: 
+   images: 
+     - "3E73Ke3Lb5N15L65Kbd1h099e1f66add31f3f.jpg"
+ -
+   url: "http://shoals.craigslist.org/bik/3536978616.html"
+   color: red
+   type: 
+   make_or_model: [Ferrari]
+   images: 
+     - "3k43Le3oe5L55E15Kad1a35105d5083b81cc7.jpg"
+     - "3Ef3Ke3G25Le5I65Hdd1a58c1f384391d1033.jpg"
+     - "3nf3F33Jd5E75Fe5Jbd1ad346168916671e7c.jpg"
+ -
+   url: "http://shoals.craigslist.org/bik/3536933284.html"
+   color: red
+   type: 
+   make_or_model: [Ferrari]
+   images: 
+     - "3G13F23Ja5Id5G75Mfd1aa36260a261611f94.jpg"
+     - "3Ea3F33J85L25Na5J1d1a81ae39ad84991df8.jpg"
+     - "3K63M33Nd5Lf5G85Mcd1a494c795cf26a10c9.jpg"
+ -
+   url: "http://shoals.craigslist.org/bik/3535137324.html"
+   color: red
+   type: 
+   make_or_model: 
+   images: 
+     - "3na3L73F55N85Kb5M5d198d83cd4266671410.jpg"
+     - "3G53J43oc5Fc5J15M4d1960aa95706f6010f4.jpg"
+ -
+   url: "http://shoals.craigslist.org/bik/3530315802.html"
+   color: purple
+   type: 
+   make_or_model: 
+   images: 
+     - "3K43M13N15N85K35H6d174c45f667489b11a4.jpg"
+     - "3M33I23N45I95G55E8d17e505ca53db7d165e.jpg"
+     - "3E53I73L95Nf5E75Hcd179e5d9b43776910c3.jpg"
+     - "3M73F63Lc5G85E75Jbd17888c5d2c000618f4.jpg"
+     - "3Ge3F63L65L45Ef5Fcd17c13fc2e450c31dfa.jpg"
+ -
+   url: "http://shoals.craigslist.org/bik/3515380686.html"
+   color: silver
+   type: 
+   make_or_model: 
+   images: 
+     - "3Ia3p43ld5I35N25F6d111cf797f8189b1303.jpg"
+     - "3E73F23J25N35Hf5Mdd1136dd35dc74cf1fb4.jpg"
+     - "3k13L83H25Gf5Kf5H7d1104e20496bdf41418.jpg"
+     - "3K53N63H25G25E85K2d1183941c722d9419a0.jpg"
+     - "3n43Jc3N95L45K25Ffd1109c2f8c648f813b9.jpg"
+     - "3E33M93o15G45H95R3d119fa6636703691370.jpg"
+ -
+   url: "http://shoals.craigslist.org/bik/3503647814.html"
+   color: blue
+   type: 
+   make_or_model: 
+   images: 
+     - "3Kc3L43H45I45N15F6ccrfe0807119f701d04.jpg"
+ -
+   url: "http://shoals.craigslist.org/bik/3490082899.html"
+   color: red
+   type: 
+   make_or_model: 
+   images: 
+     - "3F53I63J65Lc5E95Jaccj58beaa99c85716dc.jpg"
+     - "3Ee3Kb3Na5O45M85Jbccj7761c76934f613c2.jpg"
+     - "3Gc3F33o55I55Ke5J5ccjd1beec852da21036.jpg"
+ -
