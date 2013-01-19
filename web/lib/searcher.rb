@@ -1,26 +1,33 @@
+require 'net/http'
+require 'nokogiri'
+
 module Searcher
 
+  # TODO: Move to config?
+  SEARCH_URL = 'http://ec2-50-19-164-82.compute-1.amazonaws.com:8080/solr/core0/select'
+
   def self.search(options={})
+    solr_uri = URI(SEARCH_URL)
+    solr_params = {
+      :q => options[:description],
+      :rows => 20
+    }
+    solr_uri.query = URI.encode_www_form(solr_params)
 
-    # Stub results to test search
-    # TODO: Use actual database
-    results =
-      [
-       {
-         :title => 'Mountain Bike',
-         :body => 'Really cool BMX',
-         :picture => 'http://images.craigslist.org/3La3Fa3Id5I25G75F4d1g37f9023b1e6b1dc7.jpg',
-         :url => 'http://philadelphia.craigslist.org/bik/3550003235.html'
-       },
-       {
-         :title => 'Blue Bike',
-         :body => 'This bike is SO Blue!',
-         :picture => 'http://images.craigslist.org/3G33k93J85L65I55E4d1574304fdedbef1cb3.jpg',
-         :url => 'http://philadelphia.craigslist.org/bik/3523670992.html'
-       }
-      ]
+    res = Net::HTTP.get_response(solr_uri)
 
-    results
+    xml = Nokogiri::XML.parse(res.body)
+
+    solr_results = xml.css('result doc').map do |result|
+      {
+        :title => result.at_css('str[name=body]').content,
+        :body => result.at_css('str[name=body]').content,
+        :picture => result.at_css('str[name=imageURL]').content,
+        :url => 'http://craigslist.com'
+      }
+    end
+
+    solr_results
 
   end
 

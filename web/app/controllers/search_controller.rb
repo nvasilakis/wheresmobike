@@ -6,7 +6,10 @@ class SearchController < ApplicationController
     @description = params[:description]
     @date = Date.strptime(params[:date], '%m/%d/%Y')
 
-    @results = Searcher.search
+    @results =
+      Searcher.search(:picture => @picture,
+                      :description => @description,
+                      :date => @date)
 
     respond_to do |format|
       format.html
