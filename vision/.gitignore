@@ -8,3 +8,6 @@ Makefile
 cmake_install.cmake
 hs_err*.log
 lib*.a
+*.swp
+\.*.swp
+yaml_test
