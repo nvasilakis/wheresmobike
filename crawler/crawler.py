@@ -4,7 +4,7 @@ from lxml import etree, html
 from urllib2 import Request, urlopen
 import csv
 
-POST_URL=
+POST_URL="http://ec2-50-19-164-82.compute-1.amazonaws.com:8080/solr/core0/update?commit=true"
 
 def loadCraig():
     craigDict = dict()
@@ -50,7 +50,7 @@ if us != []:
             
         globalRoot = etree.Element('add')
 
-        for row in rows:
+        for row in rows[:10]:
 
             url = row.xpath('a/@href')[0]
             postId = url.split('/')[-1].split('.')[0]
@@ -120,11 +120,13 @@ if us != []:
 
         print "done with city"
         cityXML = etree.tostring(globalRoot)
-        req = urllib2.Request(url=POST_URL,
+        req = Request(url=POST_URL,
                               data=cityXML,
                               headers={'Content-Type': 'application/xml'})
-        urllib2.urlopen(req)
+        post_response = urlopen(req)
+        print post_response
 
         craigDict[city] = newLast
+        storeCraig(craigDict)
     
 storeCraig(craigDict)
