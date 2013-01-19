@@ -1,1 +1,9 @@
 build
+*~
+.cproject
+.project
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+hs_err*.log
