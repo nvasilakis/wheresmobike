@@ -11,7 +11,7 @@ module Searcher
     solr_uri = URI(@solr_url)
     solr_params = {
       :q => options[:description] + " AND " +
-            "date:[#{options[:date].iso8601} TO NOW]",
+            "date:[#{options[:date].utc.iso8601} TO NOW]",
       :rows => 20,
       :indent => 'on'
     }
