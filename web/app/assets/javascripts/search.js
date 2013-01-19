@@ -51,8 +51,15 @@ var WheresMoBike = {
         .delegate('#search-form', 'ajax:before',
                   WheresMoBike.showLoadingAnimation)
         .delegate('#search-form', 'ajax:complete',
-                  WheresMoBike.hideLoadingAnimation);
+                  WheresMoBike.hideLoadingAnimation)
 
-    $('#search').fileupload({name: 'picture'});
+        .delegate('#picture-select', 'click', function () {
+            $('input[name=picture]').click();
+        })
+        .delegate('input[name=picture]', 'change', function () {
+            var filename = $(this).val();
+            filename = filename.replace(/^.+\\/, '');
+            $('#picture-path').text(filename);
+        });
 
 })(jQuery);
