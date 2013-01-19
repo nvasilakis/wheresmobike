@@ -4,6 +4,8 @@ from lxml import etree, html
 from urllib2 import Request, urlopen
 import csv
 
+POST_URL=
+
 def loadCraig():
     craigDict = dict()
     with open('craig.csv') as craig:
@@ -36,6 +38,7 @@ if us != []:
             lastForCity = ""
         
         addr = city + "/bia"
+        cityName = city.split('/')[2].split('.')[0]    
         city_response = urlopen(addr)
         city_root = html.parse(city_response)
         rows = city_root.xpath('//p[@class="row"]')
@@ -44,6 +47,8 @@ if us != []:
             newLast = url.split('/')[-1].split('.')[0]
         else:
             newLast = lastForCity
+            
+        globalRoot = etree.Element('add')
 
         for row in rows:
 
@@ -72,11 +77,54 @@ if us != []:
             else: 
                 date = ""
 
-            print postId
-            print date
-            print imgUrl
-            print body
-        
+            locationL = row_root.xpath('//ul[@class="blurbs"]/li')
+            location = cityName
+            try:
+                locL = locationL[0].text_content().split(' ')
+                if locL[1] == "Location:":
+                    location = cityName + "; " + ' '.join(locL[2:])
+            except:
+                location = cityName
+
+            adRoot = etree.Element('doc')
+            
+            postIdNode = etree.Element('field', name='postId')
+            postIdNode.text = postId
+            adRoot.append(postIdNode)
+            
+            dateIdNode = etree.Element('field', name='date')
+            dateIdNode.text = date
+            adRoot.append(dateIdNode)
+
+            imgUrlNode = etree.Element('field', name='imageURL')
+            if imgUrl != []:
+                imgUrlNode.text = imgUrl[0]
+            adRoot.append(imgUrlNode)
+
+#            imgUrlsNode = etree.Element('imgUrls')
+#            for imgU in imgUrl:
+#                imgUNode = etree.Element('imgURL')
+#                imgUNode.text = imgU
+#                imgUrlsNode.append(imgUNode)
+#            adRoot.append(imgUrlsNode)
+
+            bodyNode = etree.Element('field', name='body')
+            bodyNode.text = body
+            adRoot.append(bodyNode)
+
+            locationNode = etree.Element('field', name='location')
+            locationNode.text = location
+            adRoot.append(locationNode)
+
+            globalRoot.append(adRoot)
+
+        print "done with city"
+        cityXML = etree.tostring(globalRoot)
+        req = urllib2.Request(url=POST_URL,
+                              data=cityXML,
+                              headers={'Content-Type': 'application/xml'})
+        urllib2.urlopen(req)
+
         craigDict[city] = newLast
     
 storeCraig(craigDict)
