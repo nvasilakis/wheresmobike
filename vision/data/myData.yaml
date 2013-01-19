@@ -39,7 +39,7 @@ bikes:
      - "3E93I63J95Gf5K25J5d1g6ba1c667edc81161.jpg"
  -
    url: "http://auburn.craigslist.org/bik/3537346265.html"
-   color: 
+   color: ""
    type: ""
    make_or_model: []
    images: 
@@ -68,7 +68,7 @@ bikes:
      - "3K53L73J15L25I75F5d1a4b25e35f11b21815.jpg"
  -
    url: "http://bham.craigslist.org/bik/3496417663.html"
-   color: 
+   color: ""
    type: ""
    make_or_model: []
    images: 
@@ -97,7 +97,7 @@ bikes:
      - "3G73L53Ma5Nb5E95Fed18ada43a300c14118a.jpg"
  -
    url: "http://bham.craigslist.org/bik/3534737105.html"
-   color: 
+   color:  ""
    type: ""
    make_or_model: []
    images: 
@@ -261,4 +261,3 @@ bikes:
      - "3F53I63J65Lc5E95Jaccj58beaa99c85716dc.jpg"
      - "3Ee3Kb3Na5O45M85Jbccj7761c76934f613c2.jpg"
      - "3Gc3F33o55I55Ke5J5ccjd1beec852da21036.jpg"
- -
