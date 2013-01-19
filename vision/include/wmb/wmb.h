@@ -36,17 +36,28 @@ struct Bike
   void write(cv::FileStorage &fs) const;
 };
 
+typedef std::vector<Bike> Bikes;
+Bikes loadBikes(const char * const filename);
+
 class WmbVision
 {
   MatColor small_;
+  MatGray smallGray_;
   MatGray canny_;
-  Circles circles_;
+  Circles circles_, circlesR_;
   Lines lines_;
 
+  const double cannyThreshHigh_;
+  const double cannyThreshLow_;
+
 public:
-  WmbVision();
+  WmbVision(const double cannyThresh0, const double cannyThresh1)
+    : cannyThreshHigh_(std::max(cannyThresh0, cannyThresh1))
+    , cannyThreshLow_(std::min(cannyThresh0, cannyThresh1))
+  {}
 
   bool process(const MatColor &img);
+  uint8_t getDominantHue() const;
 
 }; // class WmbVision
 

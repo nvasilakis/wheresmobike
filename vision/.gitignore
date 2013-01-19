@@ -13,3 +13,4 @@ lib*.so
 \.*.swp
 yaml_test
 .settings
+trainer

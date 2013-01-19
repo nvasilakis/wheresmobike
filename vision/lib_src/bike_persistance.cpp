@@ -8,6 +8,7 @@
 #include <opencv2/highgui/highgui.hpp>
 
 #include "wmb/wmb.h"
+#include "wmb/logging.h"
 
 using namespace std;
 using namespace cv;
@@ -73,6 +74,38 @@ void Bike::write(FileStorage &fs) const
       }
     fs << "]";
   fs << "}";
+}
+
+Bikes loadBikes(const char * const filename)
+{
+  FileStorage fs(filename, FileStorage::READ);
+  if(!fs.isOpened()) {
+    FATAL_STR("Could not open " << filename << " for reading");
+    exit(-3);
+  }
+  const FileNode &bikesNode = fs["bikes"];
+  DEBUG(bikesNode.empty());
+  DEBUG(bikesNode.isNone());
+  DEBUG(bikesNode.isSeq());
+  DEBUG(bikesNode.isMap());
+  DEBUG(bikesNode.isInt());
+  DEBUG(bikesNode.isReal());
+  DEBUG(bikesNode.isString());
+  DEBUG(bikesNode.isNamed());
+  CV_Assert(bikesNode.type() == FileNode::SEQ);
+
+  DEBUG(bikesNode.size());
+  Bikes bikes(bikesNode.size());
+  for(int i=0; i<bikesNode.size(); ++i) {
+    INFO(i);
+    const auto &bn = bikesNode[i];
+    auto &b = bikes[i];
+    b.read(bn);
+  }
+
+  fs.release();
+
+  return bikes;
 }
 
 } // namespace wmb

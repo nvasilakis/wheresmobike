@@ -14,6 +14,8 @@ namespace wmb
 {
 
 void displayBike(const Bike &bike);
+void displayCircles(const MatGray &img, const Circles &circles);
+
 
 } // namespace wmb
 

@@ -9,12 +9,20 @@
 
 #include "wmb/logging.h"
 #include "wmb/viz.h"
+#include "wmb/round.h"
 
 using namespace std;
 using namespace cv;
 
 namespace wmb
 {
+
+static const Scalar blue(255, 0, 0);
+static const Scalar green(0, 255, 0);
+static const Scalar red(0, 0, 255);
+static const Scalar fuscia(255, 0, 255);
+static const Scalar yellow(0, 200, 200);
+
 
 void displayBike(const Bike &bike)
 {
@@ -34,6 +42,41 @@ void displayBike(const Bike &bike)
 
   destroyAllWindows();
   waitKey(1);
+}
+
+static MatColor makeRgb(const Mat &img)
+{
+//  assert(img.channels() == 1);
+  if(img.channels() == 1) {
+    MatGray layers[3] = {img * 0.5};
+    layers[1] = layers[0].clone();
+    layers[2] = layers[0].clone();
+    MatColor rgb;
+    merge(layers, 3, rgb);
+    return rgb;
+  } else if(img.channels() == 3) {
+    return (MatColor)img.clone();
+  } else {
+    assert(false);
+    return MatColor();
+  }
+}
+
+static void drawCircle(MatColor &rgb, const Vec3f &ctrSz, const Scalar &color)
+{
+  Point c(roundToNearestInt(ctrSz[0]*16.0f), roundToNearestInt(ctrSz[1]*16.0f));
+  int r = roundToNearestInt(ctrSz[2]*16.0f);
+  circle(rgb, c, r, color, 1, CV_AA, 4);
+}
+
+void displayCircles(const MatGray &img, const Circles &circles)
+{
+  MatColor rgb = makeRgb(img);
+  for(const Vec3f &circle : circles) {
+    drawCircle(rgb, circle, blue);
+    drawCircle(rgb, Vec3f(circle[0], circle[1], 2), red);
+  }
+  imshow("circles", rgb);
 }
 
 } // namespace wmb

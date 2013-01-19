@@ -30,39 +30,11 @@ int main(int argc, char **argv)
     exit(-2);
   }
 
-  FileStorage fs(filename, FileStorage::READ);
-  if(!fs.isOpened()) {
-    FATAL_STR("Could not open " << datafolder << "/" << filename << " for reading");
-    exit(-3);
+  Bikes bikes = loadBikes(filename);
+
+  for(const Bike &bike : bikes) {
+    displayBike(bike);
   }
-  const FileNode &bikesNode = fs["bikes"];
-  DEBUG(bikesNode.empty());
-  DEBUG(bikesNode.isNone());
-  DEBUG(bikesNode.isSeq());
-  DEBUG(bikesNode.isMap());
-  DEBUG(bikesNode.isInt());
-  DEBUG(bikesNode.isReal());
-  DEBUG(bikesNode.isString());
-  DEBUG(bikesNode.isNamed());
-  CV_Assert(bikesNode.type() == FileNode::SEQ);
-
-  DEBUG(bikesNode.size());
-  vector<Bike> bikes(bikesNode.size());
-  for(int i=0; i<bikesNode.size(); ++i) {
-    INFO(i);
-    const auto &bn = bikesNode[i];
-    auto &b = bikes[i];
-    b.read(bn);
-
-    displayBike(bikes[i]);
-  }
-
-  INFO_STR("Closing down");
-
-  fs.release();
-  bikes.clear();
-
-  INFO_STR("done");
 
   return 0;
 }
