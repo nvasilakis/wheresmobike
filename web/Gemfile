@@ -40,5 +40,4 @@ gem 'jquery-rails'
 
 gem 'remotipart', '1.0.2'
 
-gem 'mechanize'
 gem 'nokogiri'
