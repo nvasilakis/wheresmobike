@@ -29,3 +29,7 @@
 #search-results > li:last-child {
     border-bottom: none;
 }
+
+#search .field-description {
+    display: none;
+}

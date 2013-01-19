@@ -16,14 +16,26 @@
                :remote => true,
                :method => :post do %>
 
-  <div>
-    <%= label_tag :description %>
+  <div class="field">
+    <label for="description">
+      Description
+      <a href="#" class="icon-question-sign"> </a>
+    </label>
+    <div class="field-description">
+      E.g. color, model, brand, etc.
+    </div>
     <input type="text" class="input-xxlarge" />
   </div>
 
-  <div>
+  <div class="field">
     <!-- Try to make the file upload dialog less horrendous... -->
-    <%= label_tag :picture %>
+    <label for="picture">
+      Picture
+      <a class="icon-question-sign"> </a>
+    </label>
+    <div class="field-description">
+      Add a picture of your bike to make the search more accurate.
+    </div>
     <input type="file" name="picture" style="display: none;" />
     <div class="input-append">
       <div class="uneditable-input input-large">
