@@ -4,8 +4,13 @@
 
 <h2>Choose a file</h2>
 
-<form action="/search" enctype="multipart/form-data"
-      method="post">
-  <input type="file" name="picture" />
-  <input type="submit" class="btn" value="Find my bike!" />
-</form>
+
+<%= form_tag '/search',
+             :multipart => true,
+             :remote => true,
+             :method => :post do %>
+
+<div><%= file_field_tag :picture %></div>
+<div><%= submit_tag 'Find my bike!', :class => 'btn' %></div>
+
+<% end %>
