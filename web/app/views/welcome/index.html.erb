@@ -1,0 +1,16 @@
+<h1>WheresMoBike</h1>
+
+<p>ASDF</p>
+
+<h2>Choose a file</h2>
+
+
+<%= form_tag '/search',
+             :multipart => true,
+             :remote => true,
+             :method => :post do %>
+
+<div><%= file_field_tag :picture %></div>
+<div><%= submit_tag 'Find my bike!', :class => 'btn' %></div>
+
+<% end %>
