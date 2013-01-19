@@ -2,26 +2,33 @@
 
 <p>ASDF</p>
 
-<h2>Tell us about your bike</h2>
+<div id="search">
+
+  <h2>Tell us about your bike</h2>
 
 
-<%= form_tag '/search',
-             :id => 'search-form',
-             :multipart => true,
-             :remote => true,
-             :method => :post do %>
+  <%= form_tag '/search',
+               :id => 'search-form',
+               :multipart => true,
+               :remote => true,
+               :method => :post do %>
 
-<div>
-  <%= label_tag :file %><%= file_field_tag :picture %>
+  <div>
+    <%= label_tag :file %><%= file_field_tag :picture %>
+  </div>
+
+  <div><%= submit_tag 'Find my bike!', :class => 'btn' %></div>
+
+  <% end %>
+
+  <div id="loading-search" style="display: none;">
+    Please, wait while we look for similar bikes...
+    <div class="image"><%= image_tag 'loading-search.gif' %></div>
+  </div>
+
 </div>
 
-<div><%= submit_tag 'Find my bike!', :class => 'btn' %></div>
-
-<% end %>
-
-<div id="loading-search" style="display: none;">
-Please, wait while we look for similar bikes...
-<div class="image"><%= image_tag 'loading-search.gif' %></div>
+<div id="search-results" style="display: none;">
+  <h2>Search Results</h2>
+  <ul></ul>
 </div>
-
-<div id="search-results" style="display: none;">Found Everything!</div>

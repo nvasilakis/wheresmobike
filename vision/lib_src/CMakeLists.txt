@@ -1,10 +1,7 @@
 add_library(${PROJECT_NAME}
-  Localizer.cpp
-  Localizer2.cpp
-  Localizer_visualization.cpp
-  Localizer_decodeQuads.cpp
-  Localizer_computeTransform.cpp
-  Cluster.cpp
+  wmb.cpp
+  bike_persistance.cpp
+  viz.cpp
 )
 target_link_libraries(${PROJECT_NAME}
   ${OpenCV_LIBS}
