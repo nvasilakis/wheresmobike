@@ -129,7 +129,7 @@ if us != []:
 
         print ("done with city: " + cityName)
         cityXML = etree.tostring(globalRoot, pretty_print="true")
-        print cityXML
+#        print cityXML
         req = Request(url=POST_URL,
                       data=cityXML,
                       headers={'Content-Type': 'application/xml'})
