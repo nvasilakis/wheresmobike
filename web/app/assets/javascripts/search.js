@@ -53,4 +53,6 @@ var WheresMoBike = {
         .delegate('#search-form', 'ajax:complete',
                   WheresMoBike.hideLoadingAnimation);
 
+    $('#search').fileupload({name: 'picture'});
+
 })(jQuery);
