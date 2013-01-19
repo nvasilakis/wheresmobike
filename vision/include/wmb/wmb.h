@@ -61,7 +61,7 @@ public:
   {}
 
   bool process(const MatColor &img);
-  uint8_t getDominantHue() const;
+  cv::Mat_<double> getFeatures() const;
 
 }; // class WmbVision
 

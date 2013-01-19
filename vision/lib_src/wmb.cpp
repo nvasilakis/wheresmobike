@@ -140,10 +140,24 @@ bool WmbVision::process(const MatColor & img)
   return false;
 }
 
-uint8_t WmbVision::getDominantHue() const
+cv::Mat_<double> WmbVision::getFeatures() const
 {
-  WARN_STR("STUB");
-  return 0;
+
+  cv::Mat_<double> res(2, 1);
+
+  double x1 = wheels_[0][0];
+  double y1 = wheels_[0][1];
+  double x2 = wheels_[1][0];
+  double y2 = wheels_[1][1];
+
+  double dist = sqrt((x1 - x2) * (x1 - x2) +
+                     (y1 - y2) * (y1 - y2));
+
+  res(0) = wheelRadius_ / dist;
+  res(1) = 42.42;
+
+  return res;
+
 }
 
 } // namespace wmb

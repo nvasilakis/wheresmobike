@@ -10,6 +10,7 @@
 #include "wmb/wmb.h"
 #include "wmb/logging.h"
 #include "wmb/viz.h"
+#include "wmb/bike_features.h"
 
 using namespace std;
 using namespace cv;
@@ -38,9 +39,11 @@ int main(int argc, char **argv)
     for(auto img : bike.images) {
       bool success = wmb.process(img.second);
       if(success) {
-        uint8_t dominant_hue = wmb.getDominantHue();
-        INFO(dominant_hue);
-        INFO(bike.color);
+        BikeFeatures bf;
+        bf.id = bike.url;
+        bf.features = wmb.getFeatures();
+        INFO(bf.features(0));
+        INFO(bf.features(1));
       } else {
         WARN_STR("Could not process bike image " << img.first);
       }
@@ -49,5 +52,3 @@ int main(int argc, char **argv)
 
   return 0;
 }
-
-
