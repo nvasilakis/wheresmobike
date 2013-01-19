@@ -8,4 +8,12 @@ class WelcomeController < ApplicationController
     end
   end
 
+  def about
+    @current_tab = :about
+
+    respond_to do |format|
+      format.html
+    end
+  end
+
 end
