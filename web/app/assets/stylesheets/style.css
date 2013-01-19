@@ -37,3 +37,7 @@
 #search .field-description {
     display: none;
 }
+
+#search .fields {
+    margin: 40px 0 30px;
+}

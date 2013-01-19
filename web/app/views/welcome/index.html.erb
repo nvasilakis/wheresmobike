@@ -16,45 +16,47 @@
                :remote => true,
                :method => :post do %>
 
-  <div class="field">
-    <label for="description">
-      Description
-      <a href="#" class="icon-question-sign"> </a>
-    </label>
-    <div class="field-description">
-      E.g. color, model, brand, etc.
-    </div>
-    <input name="description" type="text" class="input-xxlarge" />
-  </div>
-
-  <div class="field">
-    <!-- Try to make the file upload dialog less horrendous... -->
-    <label for="picture">
-      Picture
-      <a class="icon-question-sign"> </a>
-    </label>
-    <div class="field-description">
-      Add a picture of your bike to make the search more accurate.
-    </div>
-    <input type="file" name="picture" style="display: none;" />
-    <div class="input-append">
-      <div class="uneditable-input input-large">
-        <span id="picture-path"></span>
+  <div class="fields">
+    <div class="field">
+      <label for="description">
+        Description
+        <a href="#" class="icon-question-sign"> </a>
+      </label>
+      <div class="field-description">
+        E.g. color, model, brand, etc.
       </div>
-      <span id="picture-select" class="btn">Select file</span>
+      <input name="description" type="text" class="input-xxlarge" />
     </div>
-  </div>
 
-  <div class="field">
-    <label for="date">
-      Date of Theft
-      <a class="icon-question-sign"> </a>
-    </label>
-    <div class="field-description">
-      When your bike was stolen, approximately
+    <div class="field">
+      <!-- Try to make the file upload dialog less horrendous... -->
+      <label for="picture">
+        Picture
+        <a class="icon-question-sign"> </a>
+      </label>
+      <div class="field-description">
+        Add a picture of your bike to make the search more accurate.
+      </div>
+      <input type="file" name="picture" style="display: none;" />
+      <div class="input-append">
+        <div class="uneditable-input input-large">
+          <span id="picture-path"></span>
+        </div>
+        <span id="picture-select" class="btn">Select file</span>
+      </div>
     </div>
-    <input name="date" type="text"
-           value="<%= calendar_date Date.today %>" />
+
+    <div class="field">
+      <label for="date">
+        Date of Theft
+        <a class="icon-question-sign"> </a>
+      </label>
+      <div class="field-description">
+        When your bike was stolen, approximately
+      </div>
+      <input name="date" type="text"
+             value="<%= calendar_date Date.today %>" />
+    </div>
   </div>
 
   <div><%= submit_tag 'Find my bike!', :class => 'btn' %></div>
