@@ -24,6 +24,7 @@ namespace wmb
     void write(cv::FileStorage &fs) const;
   };
 
+  void read(const cv::FileNode &, BikeFeatures &, const BikeFeatures &default_value = BikeFeatures());
   void write(cv::FileStorage& fs, const std::string&, const BikeFeatures& bf);
 
 }

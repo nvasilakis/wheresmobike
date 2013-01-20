@@ -7,9 +7,11 @@
 #include <iostream>
 
 #include <opencv2/highgui/highgui.hpp>
+#include <opencv2/ml/ml.hpp>
 
 #include "wmb/logging.h"
 #include "wmb/result.h"
+#include "wmb/bike_features.h"
 
 using namespace std;
 using namespace cv;
@@ -27,7 +29,7 @@ enum class EStatus
   END_OF_INPUT
 };
 
-EStatus doIt()
+EStatus doIt(CvKNearest &knn)
 {
   unsigned n;
   string outputFileName;
@@ -65,9 +67,37 @@ EStatus doIt()
 
 int main(int argc, char ** argv)
 {
+  if (argc != 2) {
+    FATAL_STR("Wrong number of arguments (should be 2).");
+    exit(-1);
+  }
+
+  FileStorage fs(argv[1], FileStorage::READ);
+
+  FileNode r = fs.root();
+  CV_Assert(r.isSeq());
+
+  cv::Mat_<double> trainData(r.size(), 2);
+  CV_DbgAssert(trainData.cols == 2);
+  std::vector<std::string> ids(r.size());
+  cv::Mat_<double> responses(r.size(), 1);
+
+  for (int i = 0; i < r.size(); i++) {
+    BikeFeatures bf;
+    r[i] >> bf;
+    trainData.row(i) = bf.features;
+    ids[i] = bf.id;
+    responses(i) = i;
+  }
+
+  CvKNearest knn;
+  CvMat trainData2 = trainData;
+  CvMat responses2 = responses;
+  knn.train(&trainData2, &responses2, nullptr, false, 20, false);
+
   for(ever) {
     try {
-      EStatus status = doIt();
+      EStatus status = doIt(knn);
       switch(status) {
       case EStatus::OK:
         cout << "ACK" << endl;
@@ -99,5 +129,3 @@ int main(int argc, char ** argv)
 
   return 0;
 }
-
-

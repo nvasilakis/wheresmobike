@@ -30,9 +30,17 @@ namespace wmb
     fs << "{" << "id" << id << "features" << features << "}";
   }
 
-void write(cv::FileStorage& fs, const std::string&, const BikeFeatures& bf)
-{
-  bf.write(fs);
-}
+
+  void read(const cv::FileNode &fn, BikeFeatures &bf, const BikeFeatures & default_value) {
+    if (fn.empty()) {
+      bf = default_value;
+    } else {
+      bf.read(fn);
+    }
+  }
+
+  void write(cv::FileStorage& fs, const std::string&, const BikeFeatures& bf) {
+    bf.write(fs);
+  }
 
 } // namespace wmb
