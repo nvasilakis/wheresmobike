@@ -108,6 +108,20 @@ box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
     text-decoration: none;
 }
 
+#search-results .summary {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#search-results .summary h1 {
+    font-size: 18px;
+}
+
+#search-results .summary .image {
+    width: 180px;
+}
+
 ul#storyboard {
     font-size: 10pt;
     margin-bottom: 30px;
