@@ -72,6 +72,8 @@ public:
   bool process(const MatColor &img);
   MatFeatures getFeatures() const;
 
+  MatColor getSegmentation() const;
+
 }; // class WmbVision
 
 } // namespace wmb
