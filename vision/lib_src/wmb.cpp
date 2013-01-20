@@ -44,27 +44,29 @@ static void reviseCircleEstimates(Circles &circles)
 
 }
 
-static bool sortByRadius(const Vec3f &a, const Vec3f &b)
-{
-  return a[2] < b[2];
-}
+typedef bool (*circle_sort_fn)(const Vec3f &, const Vec3f &);
+
+template <int N>
+static bool sortBy(const Vec3f &a, const Vec3f &b)
+  { return a[N] < b[N]; }
 
 static constexpr bool isOdd(const int i) { return i&1; }
 static constexpr bool isEven(const int i) { return !isOdd(i); }
 
-static double findMedianWheelRadius(Circles & wheels)
+template <int N>
+static double findMedianWheel(Circles & wheels)
 {
   DEBUG(wheels.size());
-  auto b = wheels.begin();
-  auto m = b+wheels.size()/2;
-  auto e = wheels.end();
+  const auto b = wheels.begin();
+  const auto m = b+wheels.size()/2;
+  const auto e = wheels.end();
 
-  nth_element(b, m, e, &sortByRadius);
-  double median = m[0][2];
+  nth_element(b, m, e, sortBy<N>);
+  double median = m[0][N];
 
   if(isEven(wheels.size())) {
-    nth_element(b, m-1, m, &sortByRadius);
-    median += m[1][2];
+    nth_element(b, m-1, m, sortBy<N>);
+    median += m[-1][N];
     median *= 0.5;
   }
 
@@ -99,7 +101,14 @@ bool WmbVision::findWheels()
     allCircles_.emplace_back(circle[0] + cols / 2, circle[1], circle[2]);
   }
 
-  wheelRadius_ = findMedianWheelRadius(allCircles_);
+  assert(wheels_.size() == 2);
+  wheelRadius_ = findMedianWheel<2>(allCircles_);
+  wheels_[0] = Vec3f(findMedianWheel<0>(circlesL_),
+                     findMedianWheel<1>(circlesL_),
+                     wheelRadius_);
+  wheels_[1] = Vec3f(findMedianWheel<0>(circlesR_) + cols/2,
+                     findMedianWheel<1>(circlesR_),
+                     wheelRadius_);
   DEBUG(wheelRadius_);
 
   return true;
@@ -133,6 +142,7 @@ bool WmbVision::process(const MatColor & img)
   imshow("smallBlurred", smallGray_);
   imshow("canny", canny_);
   displayCircles(smallGray_, allCircles_, "all");
+  displayCircles(smallGray_, wheels_, "wheels");
   displayLines(smallGray_, lines_, "all");
   waitKey(0);
 #endif

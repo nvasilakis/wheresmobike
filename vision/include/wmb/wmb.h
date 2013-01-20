@@ -47,6 +47,8 @@ class WmbVision
   Circles circlesL_, circlesR_, allCircles_, wheels_;
   Lines lines_;
   double wheelRadius_;
+  cv::Point2f wheelCenterL_;
+  cv::Point2f wheelCenterR_;
 
   const double cannyThreshHigh_;
   const double cannyThreshLow_;
@@ -56,7 +58,9 @@ class WmbVision
 
 public:
   WmbVision(const double cannyThresh0, const double cannyThresh1)
-    : cannyThreshHigh_(std::max(cannyThresh0, cannyThresh1))
+    : wheels_(2)
+    , wheelRadius_(-1.0)
+    , cannyThreshHigh_(std::max(cannyThresh0, cannyThresh1))
     , cannyThreshLow_(std::min(cannyThresh0, cannyThresh1))
   {}
 

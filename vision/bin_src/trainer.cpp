@@ -46,7 +46,7 @@ int main(int argc, char **argv)
         bf.features = wmb.getFeatures();
         INFO(bf.features(0));
         INFO(bf.features(1));
-        fs << bf;
+        fs << "bike_features" << bf;
       } else {
         WARN_STR("Could not process bike image " << img.first);
       }
