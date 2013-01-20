@@ -65,4 +65,25 @@ MatFeatures WmbVision::getFeatures() const
 
 }
 
+static void drawCircle(MatColor &rgb, const Vec3f &ctrSz, const Scalar &color)
+{
+  Point c(roundToNearestInt(ctrSz[0]*16.0f), roundToNearestInt(ctrSz[1]*16.0f));
+  int r = roundToNearestInt(ctrSz[2]*16.0f);
+  circle(rgb, c, r, color, 1, CV_AA, 4);
+}
+
+static const Scalar blue(255, 0, 0);
+static const Scalar red(0, 0, 255);
+
+MatColor WmbVision::getSegmentation() const
+{
+  MatColor rgb;
+  cvtColor(canny_, rgb, CV_GRAY2BGR);
+  drawCircle(rgb, wheelL_, blue);
+  drawCircle(rgb, Vec3f(wheelL_[0], wheelL_[1], 2), red);
+  drawCircle(rgb, wheelR_, blue);
+  drawCircle(rgb, Vec3f(wheelR_[0], wheelR_[1], 2), red);
+  return rgb;
+}
+
 } // namespace wmb

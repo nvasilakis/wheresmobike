@@ -107,6 +107,14 @@ EStatus doIt(Ptr<DescriptorMatcher> &matcher, WmbVision &wmb,
   writeAll(results, fs);
   fs.release();
 
+
+  string outputSegmentationFileName;
+  cin >> outputSegmentationFileName;
+  Mat segmentation = wmb.getSegmentation();
+  if(!imwrite(outputSegmentationFileName, segmentation)) {
+    return EStatus::WRITE_ERROR;
+  }
+
   return results.empty() ? EStatus::NO_RESULTS : EStatus::OK;
 }
 

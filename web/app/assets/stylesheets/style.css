@@ -118,8 +118,9 @@ box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
     font-size: 18px;
 }
 
-#search-results .summary .image {
+#search-results .summary .image img {
     width: 180px;
+    margin-right: 10px;
 }
 
 ul#storyboard {

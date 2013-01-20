@@ -32,12 +32,12 @@ module Searcher
     puts "Started KNN pid=#{pid}"
   end
 
-  def self.search_image(paths)
+  def self.search_image(paths, picture_proc)
     return [] unless @comparer_command.present? && paths.present?
 
     res_file = "/tmp/WheresMoBikeSearch-#{SecureRandom.hex(16)}.xml"
 
-    msg = "#{paths.size} #{res_file} #{paths.join ' '}"
+    msg = "#{paths.size} #{res_file} #{paths.join ' '} #{picture_proc}"
     puts "Sending message to searcher: #{msg}"
     @outpipe.puts msg
     @outpipe.flush
@@ -69,7 +69,7 @@ module Searcher
     solr_uri = URI(@solr_url)
 
     if options[:picture].present?
-      urls = self.search_image [options[:picture]]
+      urls = self.search_image [options[:picture]], options[:picture_proc]
     else
       urls = []
     end
