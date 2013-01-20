@@ -34,9 +34,6 @@ bikes:
    images: 
     - '3E93I63J95Gf5K25J5d1g6ba1c667edc81161.jpg'
  -
-   url: 'http://auburn.craigslist.org/bik/3549791914.html'
-   images: 
- -
    url: 'http://auburn.craigslist.org/bik/3537346265.html'
    images: 
     - '3K23F53H55N65H95Mdd1a8875266a938a12a8.jpg'
@@ -141,9 +138,6 @@ bikes:
    images: 
     - '3E63Jf3l95N95K55H6d1i92c9106408051933.jpg'
  -
-   url: 'http://dothan.craigslist.org/bik/3554844440.html'
-   images: 
- -
    url: 'http://dothan.craigslist.org/bik/3547795766.html'
    images: 
     - '3E13G53oe5I75Nd5F7d1f03588cff49271a1a.jpg'
@@ -157,9 +151,6 @@ bikes:
    images: 
     - '3Ed3m63J35L45E85Jed1bc590b7459eee174a.jpg'
     - '3Kb3F43Mc5Ga5K95M1d1be7e18ed5f3f61262.jpg'
- -
-   url: 'http://dothan.craigslist.org/bik/3549636388.html'
-   images: 
  -
    url: 'http://shoals.craigslist.org/bik/3557063464.html'
    images: 
@@ -287,9 +278,6 @@ bikes:
     - '3K13L33N75I75E65K2d18ddc94625db221419.jpg'
     - '3kd3N23la5I15H55M4d18e50e227e514c13f8.jpg'
  -
-   url: 'http://huntsville.craigslist.org/bik/3557268860.html'
-   images: 
- -
    url: 'http://huntsville.craigslist.org/bik/3556818950.html'
    images: 
     - '3Md3Ie3Nf5Lb5G55E9d1j8a0c1d42e56210ad.jpg'
@@ -315,18 +303,9 @@ bikes:
     - '3Kc3Id3Hb5I75H25J8d1j6fe99c169d4314f1.jpg'
     - '3Ef3F53N65I95Nb5L2d1jacc9db5116701ed6.jpg'
  -
-   url: 'http://huntsville.craigslist.org/bik/3556366041.html'
-   images: 
- -
-   url: 'http://huntsville.craigslist.org/bik/3535953818.html'
-   images: 
- -
    url: 'http://huntsville.craigslist.org/bik/3556020140.html'
    images: 
     - '3Md3Fd3H75E65Hf5M7d1i36aaa5954bd91b82.jpg'
- -
-   url: 'http://mobile.craigslist.org/bik/3557573342.html'
-   images: 
  -
    url: 'http://mobile.craigslist.org/bik/3500295241.html'
    images: 
@@ -455,12 +434,6 @@ bikes:
     - '3Ee3K23L45N85Kb5Hed11a500ec8ca95014ba.jpg'
     - '3F53Ma3oc5Ic5F95M1d111468d306c4f210a3.jpg'
  -
-   url: 'http://tuscaloosa.craigslist.org/bik/3556171310.html'
-   images: 
- -
-   url: 'http://tuscaloosa.craigslist.org/bik/3556169452.html'
-   images: 
- -
    url: 'http://tuscaloosa.craigslist.org/bik/3485875044.html'
    images: 
     - '3Gf3m93M55Nb5M35J3cch97937058a8f915d7.jpg'
@@ -482,15 +455,6 @@ bikes:
     - '3E43K33Na5Nf5Lb5H3ccheff3726c0fae163d.jpg'
     - '3I43J73H95I75Ec5Hacch3aab0f2bcd4c12b7.jpg'
     - '3F33Lc3Nf5I35N35Fbcch08ba27b9ceaa180e.jpg'
- -
-   url: 'http://tuscaloosa.craigslist.org/bik/3549194035.html'
-   images: 
- -
-   url: 'http://tuscaloosa.craigslist.org/bik/3543539590.html'
-   images: 
- -
-   url: 'http://tuscaloosa.craigslist.org/bik/3548106623.html'
-   images: 
  -
    url: 'http://tuscaloosa.craigslist.org/bik/3547668305.html'
    images: 
@@ -677,9 +641,6 @@ bikes:
    images: 
     - '3Gd3k03J95G15E15M6d1a013f0b453a0c1258.jpg'
  -
-   url: 'http://juneau.craigslist.org/bik/3534639198.html'
-   images: 
- -
    url: 'http://juneau.craigslist.org/bik/3488018499.html'
    images: 
     - '3G23K93I85I55Nd5H2cci043f3de2a6b012a6.jpg'
@@ -697,9 +658,6 @@ bikes:
    images: 
     - '3K63I33J35L85I85F2d1ja6f495ebc5a21f75.jpg'
     - '3Fc3Mb3J55Le5F65Hdd1jc35a9c66fc771dd5.jpg'
- -
-   url: 'http://flagstaff.craigslist.org/bik/3557693242.html'
-   images: 
  -
    url: 'http://flagstaff.craigslist.org/bik/3524237945.html'
    images: 
@@ -721,9 +679,6 @@ bikes:
     - '3K63I43F95Le5I65Hbd1j2309a2ee87861ece.jpg'
     - '3M43L43H55Ie5Gb5M3d1jbce95ac07ad9118a.jpg'
     - '3I73M83J25Lb5G65F7d1j3ef92d0b9a8d1017.jpg'
- -
-   url: 'http://flagstaff.craigslist.org/bik/3537428140.html'
-   images: 
  -
    url: 'http://flagstaff.craigslist.org/bik/3511699582.html'
    images: 
@@ -748,9 +703,6 @@ bikes:
    url: 'http://mohave.craigslist.org/bik/3557676088.html'
    images: 
     - '3Ga3K23M85L25If5Hbd1j8ec67eafc4fc1b6e.jpg'
- -
-   url: 'http://mohave.craigslist.org/bik/3557430121.html'
-   images: 
  -
    url: 'http://mohave.craigslist.org/bik/3557246658.html'
    images: 
