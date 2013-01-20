@@ -15,7 +15,10 @@ class SearchController < ApplicationController
     @date = Date.strptime(params[:date], '%m/%d/%Y').to_time
 
     @response = {
-      :search => {},
+      :search => {
+        :description => @description,
+        :date => @date
+      },
       :results => Searcher.search(:picture => @picture,
                                   :description => @description,
                                   :date => @date)
