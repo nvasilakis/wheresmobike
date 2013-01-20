@@ -12,7 +12,7 @@ class SearchController < ApplicationController
                       :date => @date)
 
     # uncomment to test waiting screen
-    # sleep 5
+    sleep 5
 
     respond_to do |format|
       format.html

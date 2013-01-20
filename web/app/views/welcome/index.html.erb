@@ -47,7 +47,7 @@
           <a class="icon-question-sign"> </a>
         </label>
         <div class="field-description">
-          Day your bike was stolen on, approximately
+          Day on which your bike was stolen (approx.)
         </div>
         <input name="date" type="text"
                value="<%= calendar_date Date.today %>" />
@@ -59,17 +59,17 @@
 
   <% end %>
 
-  <div id="loading-search" style="display: none;">
-    Please, wait while we look for similar bikes...
-    <div class="image">
-      <script src="/assets/three.min.js"></script>
-      <script src="/assets/ColladaLoader.js"></script>
-      <script src="/assets/Detector.js"></script>
-      <script src="/assets/stats.min.js"></script>
-      <script src="/assets/collada_demo.js"></script>
-    </div>
-  </div>
+</div>
 
+<div id="loading-search" style="display: none;">
+  Please, wait while we look for similar bikes...
+  <div class="image">
+    <script src="/assets/three.min.js"></script>
+    <script src="/assets/ColladaLoader.js"></script>
+    <script src="/assets/Detector.js"></script>
+    <script src="/assets/stats.min.js"></script>
+    <script src="/assets/collada_demo.js"></script>
+  </div>
 </div>
 
 <div id="search-results" style="display: none;">

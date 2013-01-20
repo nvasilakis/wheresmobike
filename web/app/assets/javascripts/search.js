@@ -4,9 +4,10 @@ var WheresMoBike = {
 
     showLoadingAnimation: function () {
         var form = $(this),
+            search = $('#search'),
             loadingBox = $('#loading-search');
 
-        form.fadeOut(400, function () {
+        search.fadeOut(400, function () {
             loadingBox.fadeIn(400, function () {
                 WheresMoBike.loadingAnimationComplete = true;
             });
@@ -18,11 +19,11 @@ var WheresMoBike = {
             search = $('#search'),
             loadingBox = $('#loading-search');
         if (WheresMoBike.loadingAnimationComplete) {
-            loadingBox.fadeOut();
             search.hide();
+            loadingBox.hide();
             WheresMoBike.loadingAnimationComplete = false;
         } else {
-            form.stop();
+            search.stop();
             search.hide();
             loadingBox.stop();
             loadingBox.hide();
