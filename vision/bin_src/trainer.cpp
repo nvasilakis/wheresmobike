@@ -45,7 +45,7 @@ int main(int argc, char **argv)
   fs << "bike_features" << "[";
 
   Bike bike;
-  for(int i=0; i<bikesNode.size(); ++i) {
+  for(unsigned i=0; i<bikesNode.size(); ++i) {
     bike.read(bikesNode[i]);
     for(auto img : bike.images) {
       ++i;
