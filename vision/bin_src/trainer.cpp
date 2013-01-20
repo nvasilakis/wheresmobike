@@ -31,15 +31,22 @@ int main(int argc, char **argv)
     exit(-2);
   }
 
-  Bikes bikes = loadBikes(filename);
+  FileStorage bikesFs(filename, FileStorage::READ);
+  if(!bikesFs.isOpened()) {
+    FATAL_STR("could not open " << filename << " for reading");
+    exit(-3);
+  }
+  const FileNode &bikesNode = bikesFs["bikes"];
+  CV_Assert(bikesNode.isSeq());
 
   WmbVision wmb(150.0, 75.0);
 
   FileStorage fs(string("features_")+filename, FileStorage::WRITE);
   fs << "bike_features" << "[";
 
-  int i=0;
-  for(Bike &bike : bikes) {
+  Bike bike;
+  for(int i=0; i<bikesNode.size(); ++i) {
+    bike.read(bikesNode[i]);
     for(auto img : bike.images) {
       ++i;
       bool success = wmb.process(img.second);
