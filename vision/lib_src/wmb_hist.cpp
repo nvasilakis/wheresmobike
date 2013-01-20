@@ -10,6 +10,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #endif
 
+#include "wmb/logging.h"
 #include "wmb/wmb.h"
 #include "wmb/wmb_params.h"
 
@@ -63,9 +64,9 @@ void WmbVision::buildColorHistograms(const MatColor &img)
   calcHist(&hsv, 1, channels, mask,
       hist_, 2, histSize, ranges, true, // the histogram is uniform
       false);
-  double maxVal = 0.0;
-  minMaxLoc(hist_, nullptr, &maxVal, nullptr, nullptr);
-  hist_ *= (float)(1.0/maxVal);
+  const float nz = countNonZero(mask);
+  DEBUG(nz);
+  hist_ *= hist_.total()/nz;
 
 #ifndef NDEBUG
   imshow("fork mask", mask);
