@@ -1,5 +1,4 @@
-function gl_demo_concept() {
-  if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+(function () {
 
   var container, stats;
 
@@ -16,6 +15,11 @@ function gl_demo_concept() {
   var rdelta = 0.1;
 
   var loader = new THREE.ColladaLoader();
+
+function glDemoConcept() {
+  if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+
+
   loader.options.convertUpAxis = true;
   loader.load( '/assets/bicycle.dae', function ( collada ) {
 
@@ -29,6 +33,8 @@ function gl_demo_concept() {
       animate();
   } );
 }
+
+WheresMoBike.glDemoConcept = glDemoConcept;
 
 function init() {
     container = $('#loading-search .image');
@@ -171,3 +177,7 @@ function render() {
     renderer.render( scene, camera );
 
 }
+
+
+
+})();
