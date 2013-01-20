@@ -39,8 +39,10 @@ int main(int argc, char **argv)
 
   for(Bike &bike : bikes) {
     for(auto img : bike.images) {
-      bool success = wmb.process(img.second);
-      if(success) {
+      int userRating;
+      bool success = wmb.process(img.second, userRating);
+      DEBUG((char)userRating);
+      if(success && 'g' == userRating) {
         BikeFeatures bf;
         bf.id = bike.url;
         bf.features = wmb.getFeatures();

@@ -64,7 +64,7 @@ public:
     , cannyThreshLow_(std::min(cannyThresh0, cannyThresh1))
   {}
 
-  bool process(const MatColor &img);
+  bool process(const MatColor &img, int &userRating);
   cv::Mat_<double> getFeatures() const;
 
 }; // class WmbVision

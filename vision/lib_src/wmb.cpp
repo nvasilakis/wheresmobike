@@ -123,7 +123,7 @@ void WmbVision::proprocessImage(const MatColor& img)
   Canny(smallGray_, canny_, cannyThreshHigh_, cannyThreshLow_);
 }
 
-bool WmbVision::process(const MatColor & img)
+bool WmbVision::process(const MatColor & img, int &userRating)
 {
   // preprocess image
   proprocessImage(img);
@@ -144,7 +144,19 @@ bool WmbVision::process(const MatColor & img)
   displayCircles(smallGray_, allCircles_, "all");
   displayCircles(smallGray_, wheels_, "wheels");
   displayLines(smallGray_, lines_, "all");
-  waitKey(0);
+  do {
+    userRating = waitKey(0);
+    switch(userRating) {
+    case 'g':
+    case 'b':
+    case 'm':
+    case 'u':
+      break;
+    default:
+      userRating = 0;
+      break;
+    } // switch(userRating)
+  } while(!userRating);
 #endif
 
   return true;
