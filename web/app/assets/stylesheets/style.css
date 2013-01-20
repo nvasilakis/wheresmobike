@@ -1,3 +1,8 @@
+header .lead {
+    padding-left: 120px;
+    background-color: rgba(0,0,0,0.5);
+}
+
 #search .input-large {
     margin-bottom: 10px;
 }

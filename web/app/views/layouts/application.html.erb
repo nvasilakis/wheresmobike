@@ -22,8 +22,11 @@
   <header class="jumbotron subhead" id="show-two" style="display:none;">
     <div class="container">
       <h1>WheresMoBike</h1>
-      <p class="lead"> <span style="background-color:rgba(0, 0, 0,0.5);">WheresMoBike is a service to help people looking for their stolen
-        bikes.<span> <a href="/about" style="color:#78EDFF">Learn more »</a></p>
+      <p class="lead">
+        We help people find their stolen bikes.
+        <% if @current_tab != :about %>
+          <a href="/about" style="color:#78EDFF">Learn more »</a>
+        <% end %></p>
     </div>
   </header>
 
