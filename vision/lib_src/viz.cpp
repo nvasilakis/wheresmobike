@@ -85,18 +85,28 @@ void displayCircles(const MatGray &img, const Circles &circles, const string &na
 //  line(rgb, pt0, pt1, color, 1, CV_AA, 4);
 //}
 
-static void drawSegment(MatColor &rgb, const Vec4i &p, const Scalar &color)
-{
-  line(rgb, Point(p[0], p[1]), Point(p[2], p[3]), color, 1, CV_AA, 0);
-  drawCircle(rgb, Vec3f(p[0], p[1], 1), fuscia);
-  drawCircle(rgb, Vec3f(p[2], p[3], 1), fuscia);
-}
+//static void drawSegment(MatColor &rgb, const Vec4i &p, const Scalar &color)
+//{
+//  line(rgb, Point(p[0], p[1]), Point(p[2], p[3]), color, 1, CV_AA, 0);
+//  drawCircle(rgb, Vec3f(p[0], p[1], 1), fuscia);
+//  drawCircle(rgb, Vec3f(p[2], p[3], 1), fuscia);
+//}
 
 void displayLines(const MatGray &img, const Lines &lines, const string &name)
 {
   MatColor rgb = makeRgb(img);
-  for(const Vec4i &line : lines) {
-    drawSegment(rgb, line, green);
+  for(const Vec2f &line : lines) {
+    const float rho = line[0];
+    const float theta = line[1];
+    const float a = cosf(theta),
+                b = sinf(theta);
+    const float x0 = a*rho,
+                y0 = b*rho;
+    Point pt1(cvRound(x0 + 1000*(-b)),
+              cvRound(y0 + 1000*(a)));
+    Point pt2(cvRound(x0 - 1000*(-b)),
+              cvRound(y0 - 1000*(a)));
+    cv::line(rgb, pt1, pt2, blue, 1, CV_AA, 0);
   }
   imshow(name+" lines", rgb);
 }

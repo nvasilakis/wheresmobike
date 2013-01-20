@@ -20,7 +20,7 @@ namespace wmb
 typedef cv::Mat_<cv::Vec3b> MatColor;
 typedef cv::Mat_<uint8_t> MatGray;
 typedef std::vector<cv::Vec3f> Circles;
-typedef std::vector<cv::Vec4i> Lines;
+typedef std::vector<cv::Vec2f> Lines;
 typedef std::vector<std::string> Strings;
 typedef std::unordered_map<std::string, MatColor> Images;
 

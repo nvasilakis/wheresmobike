@@ -24,7 +24,7 @@ int maxWheelRadius(const int cols)        { return round(cols * 0.333); }
 // fork extraction
 double linesDistanceResolution()      { return 1.0; }
 double linesAngleResolution()         { return 1.0*TAU/360.0; }
-int linesAccumThresh(const double radius)  { return round(radius * 0.25); }
+int linesAccumThresh(const double radius)  { return round(radius * 1.5); }
 double minLineLength(const double radius)  { return radius * 0.75; }
 double maxLineGap(const double radius)     { return radius * 0.35; }
 double maxLineDistSqFromCircle(const double radius) { return (radius * 0.25) * (radius * 0.25); }
