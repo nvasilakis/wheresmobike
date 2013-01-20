@@ -1,8 +1,8 @@
-<div class="page-header">
-  <h1>Tell us about your bike</h1>
-</div>
-
 <div id="search">
+
+  <div class="page-header">
+    <h1>Tell us about your bike</h1>
+  </div>
 
   <%= form_tag '/search',
                :id => 'search-form',
@@ -22,34 +22,36 @@
       <input name="description" type="text" class="input-xxlarge" />
     </div>
 
-    <div class="field">
-      <!-- Try to make the file upload dialog less horrendous... -->
-      <label for="picture">
-        Picture
-        <a class="icon-question-sign"> </a>
-      </label>
-      <div class="field-description">
-        Add a picture of your bike to make the search more accurate.
-      </div>
-      <input type="file" name="picture" style="display: none;" />
-      <div class="input-append">
-        <div class="uneditable-input input-large">
-          <span id="picture-path"></span>
+    <div class="row">
+      <div class="field span4">
+        <!-- Try to make the file upload dialog less horrendous... -->
+        <label for="picture">
+          Picture
+          <a class="icon-question-sign"> </a>
+        </label>
+        <div class="field-description">
+          Add a picture of your bike to make the search more accurate.
         </div>
-        <span id="picture-select" class="btn">Select file</span>
+        <input type="file" name="picture" style="display: none;" />
+        <div class="input-append">
+          <div class="uneditable-input input-large">
+            <span id="picture-path"></span>
+          </div>
+          <span id="picture-select" class="btn">Select file</span>
+        </div>
       </div>
-    </div>
 
-    <div class="field">
-      <label for="date">
-        Date of Theft
-        <a class="icon-question-sign"> </a>
-      </label>
-      <div class="field-description">
-        When your bike was stolen, approximately
+      <div class="field span4">
+        <label for="date">
+          Date of Theft
+          <a class="icon-question-sign"> </a>
+        </label>
+        <div class="field-description">
+          When your bike was stolen, approximately
+        </div>
+        <input name="date" type="text"
+               value="<%= calendar_date Date.today %>" />
       </div>
-      <input name="date" type="text"
-             value="<%= calendar_date Date.today %>" />
     </div>
   </div>
 
@@ -71,7 +73,9 @@
 </div>
 
 <div id="search-results" style="display: none;">
-  <h2>Search Results</h2>
+  <div class="page-header">
+    <h1>Search Results</h1>
+  </div>
   <div class="no-results">
     Sorry, no results were found. Please try a <a href="/">new
     search</a>, or try again later.
