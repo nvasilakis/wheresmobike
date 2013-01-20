@@ -69,12 +69,7 @@ module Searcher
     solr_uri = URI(@solr_url)
 
     if options[:picture].present?
-      picture = options[:picture]
-      old_name = picture.tempfile.path
-      puts old_name
-      new_name = "/tmp/#{SecureRandom.hex 16}#{picture.original_filename}"
-      FileUtils.cp(old_name, new_name)
-      urls = self.search_image [new_name]
+      urls = self.search_image [options[:picture]]
     else
       urls = []
     end

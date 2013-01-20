@@ -30,7 +30,8 @@ var WheresMoBike = {
         }
     },
 
-    showSearchResults: function (results) {
+    showSearchResults: function (response) {
+        var results = response['results'];
         var resultsDiv = $('#search-results');
         var resultsUl = resultsDiv.children('ul');
 
