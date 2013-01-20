@@ -4,9 +4,10 @@ var WheresMoBike = {
 
     showLoadingAnimation: function () {
         var form = $(this),
+            search = $('#search'),
             loadingBox = $('#loading-search');
 
-        form.fadeOut(400, function () {
+        search.fadeOut(400, function () {
             loadingBox.fadeIn(400, function () {
                 WheresMoBike.loadingAnimationComplete = true;
             });
@@ -18,22 +19,31 @@ var WheresMoBike = {
             search = $('#search'),
             loadingBox = $('#loading-search');
         if (WheresMoBike.loadingAnimationComplete) {
-            loadingBox.fadeOut();
             search.hide();
+            loadingBox.hide();
             WheresMoBike.loadingAnimationComplete = false;
         } else {
-            form.stop();
+            search.stop();
             search.hide();
             loadingBox.stop();
             loadingBox.hide();
         }
     },
 
-    showSearchResults: function (results) {
-        var resultsDiv = $('#search-results');
-        var resultsUl = resultsDiv.children('ul');
+    showSearchResults: function (response) {
+        var results = response['results'],
+            resultsDiv = $('#search-results'),
+            resultsUl = resultsDiv.children('ul'),
+            searchSummary = resultsDiv.children('.summary');
+
+        var pictureUrl = response['search']['picture'];
 
         resultsUl.empty();
+        searchSummary.empty();
+
+        if (pictureUrl) {
+            searchSummary.append($('<img src="' + pictureUrl + '" />'));
+        }
 
         if (results.length == 0) {
             resultsDiv.children('.no-results').show();
