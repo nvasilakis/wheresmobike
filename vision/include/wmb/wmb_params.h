@@ -25,9 +25,8 @@ extern int linesAccumThresh(const double radius);
 extern double minLineLength(const double radius);
 extern double maxLineGap(const double radius);
 extern double maxLineDistSqFromCircle(const double radius);
-extern double minForkAngle();
 extern double optimalForkAngle();
-extern double maxForkAngle();
+extern double maxForkAngleDeviation();
 
 } // namespace wmb
 

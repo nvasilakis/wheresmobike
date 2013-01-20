@@ -19,8 +19,7 @@ namespace wmb
 {
 
 WmbVision::WmbVision(double cannyThresh0 , double cannyThresh1)
-  : wheelRadius_(-1.0)
-  , cannyThreshHigh_(std::max(cannyThresh0, cannyThresh1))
+  : cannyThreshHigh_(std::max(cannyThresh0, cannyThresh1))
   , cannyThreshLow_(std::min(cannyThresh0, cannyThresh1))
 {}
 

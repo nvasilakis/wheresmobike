@@ -38,6 +38,7 @@ bool WmbVision::process(const MatColor & img)
   displayLines(canny_, allLines_, "all");
   displayLines(canny_, linesL_, "left");
   displayLines(canny_, linesR_, "right");
+  displayLineSegments(smallGray_, {forkL_, forkR_}, "fork");
   waitKey(0);
 #endif
 

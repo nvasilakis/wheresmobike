@@ -24,12 +24,11 @@ int maxWheelRadius(const int cols)        { return round(cols * 0.333); }
 // fork extraction
 double linesDistanceResolution()      { return 1.0; }
 double linesAngleResolution()         { return 1.0*TAU/360.0; }
-int linesAccumThresh(const double radius)  { return round(radius * 1.5); }
+int linesAccumThresh(const double radius)  { return round(radius * 1.0); }
 double minLineLength(const double radius)  { return radius * 0.75; }
 double maxLineGap(const double radius)     { return radius * 0.35; }
-double maxLineDistSqFromCircle(const double radius) { return (radius * 0.25) * (radius * 0.25); }
-double minForkAngle()   { return 15.0 * TAU / 360.0; }
-double optimalForkAngle() { return 60.0 * TAU / 360.0; }
-double maxForkAngle()   { return 105.0 * TAU / 360.0; }
+double maxLineDistSqFromCircle(const double radius) { return (radius * 0.35) * (radius * 0.35); }
+double optimalForkAngle()           { return 20.0 * TAU / 360.0; }
+double maxForkAngleDeviation()      { return 20.0 * TAU / 360.0; }
 
 } // namespace wmb

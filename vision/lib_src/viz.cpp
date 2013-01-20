@@ -78,12 +78,12 @@ void displayCircles(const MatGray &img, const Circles &circles, const string &na
   imshow(name+" circles", rgb);
 }
 
-//static void drawSegment(MatColor &rgb, float x0, float y0, float x1, float y1, const Scalar &color)
-//{
-//  Point pt0(roundToNearestInt(x0*16.0f), roundToNearestInt(y0*16.0f));
-//  Point pt1(roundToNearestInt(x1*16.0f), roundToNearestInt(y1*16.0f));
-//  line(rgb, pt0, pt1, color, 1, CV_AA, 4);
-//}
+static void drawSegment(MatColor &rgb, float x0, float y0, float x1, float y1, const Scalar &color)
+{
+  Point pt0(roundToNearestInt(x0*16.0f), roundToNearestInt(y0*16.0f));
+  Point pt1(roundToNearestInt(x1*16.0f), roundToNearestInt(y1*16.0f));
+  line(rgb, pt0, pt1, color, 1, CV_AA, 4);
+}
 
 //static void drawSegment(MatColor &rgb, const Vec4i &p, const Scalar &color)
 //{
@@ -109,6 +109,15 @@ void displayLines(const MatGray &img, const Lines &lines, const string &name)
     cv::line(rgb, pt1, pt2, blue, 1, CV_AA, 0);
   }
   imshow(name+" lines", rgb);
+}
+
+void displayLineSegments(const MatGray &img, const vector<Vec4f> &segments, const string &name)
+{
+  MatColor rgb = makeRgb(img);
+  for(const Vec4f &seg : segments) {
+    drawSegment(rgb, seg[0], seg[1], seg[2], seg[3], fuscia);
+  }
+  imshow(name+" segments", rgb);
 }
 
 void vizCleanup()
