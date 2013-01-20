@@ -18,6 +18,10 @@ namespace wmb
 
 static void readStrings(const FileNode &n, Strings &strings)
 {
+  if(n.empty()) {
+    strings.clear();
+    return;
+  }
   strings.resize(n.size());
   CV_Assert(n.type() == FileNode::SEQ);
   for(int i=0; i<n.size(); ++i) {

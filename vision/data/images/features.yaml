@@ -1,0 +1,2367 @@
+%YAML:1.0
+bike_features:
+   id: "http://auburn.craigslist.org/bik/3515537166.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9257381609828276e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://bham.craigslist.org/bik/3557244798.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7264665899192830e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://bham.craigslist.org/bik/3514648222.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0930348279991715e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://dothan.craigslist.org/bik/3555661920.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6651987457497656e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3557063464.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7622897948433195e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3552176758.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3964278751050347e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3536978616.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6232628297093724e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3536978616.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7415076113723502e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3536933284.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7415076113723502e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3536933284.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6232628297093724e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3530315802.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7347177275240853e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3515380686.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9421336810748744e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3515380686.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9440106078480455e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3490082899.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5855477923007081e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3490086019.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5929688817484092e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://gadsden.craigslist.org/bik/3556012895.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6346343919678850e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://gadsden.craigslist.org/bik/3555532591.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7685227388105071e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://gadsden.craigslist.org/bik/3548809568.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8008287320697023e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://gadsden.craigslist.org/bik/3544190730.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7742931250432967e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://gadsden.craigslist.org/bik/3542406502.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8816968275423455e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://gadsden.craigslist.org/bik/3527809657.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8287795298286639e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://huntsville.craigslist.org/bik/3556772537.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8119198821625579e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://huntsville.craigslist.org/bik/3556020140.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6346343919678850e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://mobile.craigslist.org/bik/3500295241.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6268123009575256e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://mobile.craigslist.org/bik/3504226196.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8655064827270627e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://mobile.craigslist.org/bid/3531592774.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5023341769549401e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://mobile.craigslist.org/bid/3525521196.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9390236979309114e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://mobile.craigslist.org/bik/3534347026.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5841441216086369e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://montgomery.craigslist.org/bik/3555217618.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4130708712517324e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://montgomery.craigslist.org/bik/3554615374.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1089416732279052e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://montgomery.craigslist.org/bik/3517443104.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9883433072121596e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://montgomery.craigslist.org/bik/3550034248.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6510281834176719e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://montgomery.craigslist.org/bik/3548428454.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5721336923331289e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://montgomery.craigslist.org/bik/3495233346.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4384874687132865e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tuscaloosa.craigslist.org/bik/3485875044.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7993259273569576e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tuscaloosa.craigslist.org/bik/3485760466.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.2402444063283753e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tuscaloosa.craigslist.org/bik/3485760466.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9911020753041090e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tuscaloosa.craigslist.org/bik/3547668305.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9553845107511606e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://anchorage.craigslist.org/bik/3492627625.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4172657950703380e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://anchorage.craigslist.org/bik/3557699513.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9301239945710572e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://anchorage.craigslist.org/bik/3557699513.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5272449977029882e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://anchorage.craigslist.org/bik/3492336567.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7817747897671868e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://anchorage.craigslist.org/bik/3557122485.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4094643558171050e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fairbanks.craigslist.org/bik/3555486511.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.1876707251052535e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fairbanks.craigslist.org/bik/3511484660.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8675651859057066e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fairbanks.craigslist.org/bik/3532310755.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.2532969953715263e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://kenai.craigslist.org/bik/3533872768.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8902120142392473e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://kenai.craigslist.org/bik/3494177237.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5982982840708518e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://juneau.craigslist.org/bik/3488018499.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.5608213971443248e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://juneau.craigslist.org/bik/3488018499.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.3659242493304170e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://flagstaff.craigslist.org/bik/3524237945.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.3018020386967772e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://flagstaff.craigslist.org/bik/3511699582.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1796886047130618e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://mohave.craigslist.org/bik/3557140012.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5416490193753505e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://mohave.craigslist.org/bik/3545834424.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0226392626537418e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://phoenix.craigslist.org/evl/bid/3557866158.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7543317192234579e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://phoenix.craigslist.org/evl/bik/3557858283.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7518587124647981e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://phoenix.craigslist.org/evl/bik/3557856668.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6229380408169356e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://phoenix.craigslist.org/evl/bik/3557856668.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6561888780076709e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://phoenix.craigslist.org/evl/bik/3507006504.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0477844699351453e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://phoenix.craigslist.org/evl/bik/3507006504.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1967309926587351e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://phoenix.craigslist.org/evl/bik/3507006504.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9865855904590233e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://phoenix.craigslist.org/evl/bik/3522277220.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5960074265897259e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://prescott.craigslist.org/bik/3557471243.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9256905625713420e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://prescott.craigslist.org/bik/3557414517.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6959963426690697e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://prescott.craigslist.org/bik/3557102153.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0953806598367406e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://showlow.craigslist.org/bik/3539847957.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1464586750736218e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://showlow.craigslist.org/bik/3534814208.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6773275921743928e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://showlow.craigslist.org/bik/3442198943.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9228933563458187e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sierravista.craigslist.org/bik/3539682860.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5867969901473437e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sierravista.craigslist.org/bik/3527533934.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5788625193711107e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sierravista.craigslist.org/bik/3527533934.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6422303190106733e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tucson.craigslist.org/bik/3557859970.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7911967461445553e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tucson.craigslist.org/bik/3557859970.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9777546600132387e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tucson.craigslist.org/bik/3557602245.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5934249796765918e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://yuma.craigslist.org/bik/3553249826.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6566363600820625e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://yuma.craigslist.org/bik/3556230782.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8115752512094649e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://yuma.craigslist.org/bik/3541103688.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6984801120903235e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://yuma.craigslist.org/bik/3555930588.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0358095689910713e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fayar.craigslist.org/bik/3557814871.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4499844157155404e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fayar.craigslist.org/bik/3557734710.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8109171376481190e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortsmith.craigslist.org/bik/3544142619.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7499091965046696e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortsmith.craigslist.org/bik/3544166723.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5259490091326087e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortsmith.craigslist.org/bik/3493808937.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4173854306327328e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortsmith.craigslist.org/bik/3493808937.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7153485371069275e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortsmith.craigslist.org/bik/3548575177.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7755071907025636e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://jonesboro.craigslist.org/bik/3513749672.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7830825309804902e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://jonesboro.craigslist.org/bik/3511917559.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8481473425799836e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://jonesboro.craigslist.org/bik/3511917559.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9685067891634948e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://littlerock.craigslist.org/bik/3557623202.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7007069913050197e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://littlerock.craigslist.org/bik/3557282377.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9083274037566220e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://littlerock.craigslist.org/bik/3556807831.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9061378986807346e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://littlerock.craigslist.org/bik/3523280046.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7844221640269984e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://texarkana.craigslist.org/bik/3538121185.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.1418063952370081e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://texarkana.craigslist.org/bik/3538121185.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8512859333085266e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://bakersfield.craigslist.org/bik/3553114761.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6723403605559054e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://bakersfield.craigslist.org/bik/3557756738.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4689856850844596e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://bakersfield.craigslist.org/bik/3524161065.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6339143198502302e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://chico.craigslist.org/bik/3514201704.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.0104983971103663e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://chico.craigslist.org/bik/3557471714.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6350687883744905e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fresno.craigslist.org/bik/3552830029.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3954492394280211e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fresno.craigslist.org/bik/3552830029.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9139367398694227e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fresno.craigslist.org/bik/3525186094.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8287795298286639e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fresno.craigslist.org/bik/3557701806.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0576592576610578e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fresno.craigslist.org/bik/3507292569.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6537826146726623e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fresno.craigslist.org/bik/3552743861.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7504120091992645e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fresno.craigslist.org/bik/3552743861.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8014377645632688e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://goldcountry.craigslist.org/bik/3536607198.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5614268747973534e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://goldcountry.craigslist.org/bik/3536632773.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0764694692439504e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://goldcountry.craigslist.org/bik/3525440110.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9630893746739045e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://goldcountry.craigslist.org/bik/3507675630.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7266217431618422e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://goldcountry.craigslist.org/bik/3526400847.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3855308266513994e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://humboldt.craigslist.org/bik/3557664396.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7372476186432765e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://humboldt.craigslist.org/bik/3557164808.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5838295523123023e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://humboldt.craigslist.org/bik/3493502725.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9998744200134414e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://humboldt.craigslist.org/bik/3493502725.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0117649285498516e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://humboldt.craigslist.org/bik/3496760290.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7747482383806238e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://imperial.craigslist.org/bik/3524959576.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3745357936326505e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://imperial.craigslist.org/bik/3535020980.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7112486247367318e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://imperial.craigslist.org/bik/3535020980.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5813640661535026e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://inlandempire.craigslist.org/bik/3543639834.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8256151539481711e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://inlandempire.craigslist.org/bik/3557829087.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7679166200870375e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://losangeles.craigslist.org/wst/bik/3557858260.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1270963254971318e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://losangeles.craigslist.org/sfv/bik/3541075798.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7405212156289505e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://losangeles.craigslist.org/lgb/bid/3557856361.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7520759302909525e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://mendocino.craigslist.org/bik/3541221669.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9653430891460503e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://merced.craigslist.org/bik/3557152167.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7704587315978330e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://merced.craigslist.org/bik/3517870614.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3382392123992729e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://merced.craigslist.org/bik/3527161269.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7054584999938802e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://modesto.craigslist.org/bik/3557834630.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8892630050836804e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://modesto.craigslist.org/bik/3557813523.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4392780761372806e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://modesto.craigslist.org/bik/3557804470.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6646475474409820e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://monterey.craigslist.org/bik/3530220973.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7657886017497491e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://monterey.craigslist.org/bik/3550549987.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0653018699342111e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://monterey.craigslist.org/bik/3550549987.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7637119683195316e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://monterey.craigslist.org/bik/3557715934.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9705970953429628e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://monterey.craigslist.org/bik/3557608753.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7368059905057235e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://monterey.craigslist.org/bik/3517742069.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6503913308321952e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orangecounty.craigslist.org/bik/3557869254.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7808402561794315e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orangecounty.craigslist.org/bik/3557869254.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4352777686542279e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orangecounty.craigslist.org/bik/3524856746.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3470557514623322e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orangecounty.craigslist.org/bik/3527209679.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4071041595584217e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://palmsprings.craigslist.org/bik/3547116979.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4770628045574403e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://palmsprings.craigslist.org/bik/3557601507.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.2153493713711880e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://palmsprings.craigslist.org/bik/3557485506.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3521375117329443e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://palmsprings.craigslist.org/bik/3557385775.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8679563095794047e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://redding.craigslist.org/bik/3526401202.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4045760738805627e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://redding.craigslist.org/bik/3549053805.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1054407158153968e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://redding.craigslist.org/bik/3557577593.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3047911527349182e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://redding.craigslist.org/bik/3514391897.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6647987315464328e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://redding.craigslist.org/bik/3514391897.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7774871479381213e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sacramento.craigslist.org/bik/3557837052.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5600376274156200e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sacramento.craigslist.org/bik/3526317599.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3596459432507147e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sacramento.craigslist.org/bik/3557833826.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7823591114395163e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sacramento.craigslist.org/bik/3557833155.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8247672854240030e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sandiego.craigslist.org/csd/bik/3531042523.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4216059655726721e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sandiego.craigslist.org/csd/bik/3547585836.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4406496516416978e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sandiego.craigslist.org/csd/bik/3500313688.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8423867763103017e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sfbay.craigslist.org/sfc/bik/3535148410.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9738256393534707e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sfbay.craigslist.org/pen/bik/3557864708.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.3271112273105968e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://slo.craigslist.org/bik/3557617446.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8271485834788768e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://slo.craigslist.org/bik/3512800709.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4923615949760292e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://slo.craigslist.org/bik/3512800709.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5621320443091999e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://slo.craigslist.org/bik/3532787178.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7227072474431163e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://santabarbara.craigslist.org/bik/3557820725.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8346820037160414e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://santabarbara.craigslist.org/bik/3539256033.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6448583297167993e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://santabarbara.craigslist.org/bik/3539256033.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7935049431311704e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://santamaria.craigslist.org/bik/3503179222.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5959137595236925e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://santamaria.craigslist.org/bik/3524328875.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7585644240747659e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://santamaria.craigslist.org/bik/3555279364.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4558833004789710e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://siskiyou.craigslist.org/bik/3488803238.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.2929998498220069e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://siskiyou.craigslist.org/bik/3475917809.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9874826518540465e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://stockton.craigslist.org/bik/3535058190.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.2682034784282518e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://susanville.craigslist.org/bik/3465692404.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5529587405851517e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://reno.craigslist.org/bik/3494891038.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8927461853973024e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://reno.craigslist.org/bik/3494891038.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9591856910644188e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://ventura.craigslist.org/bik/3496506138.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0907622006179691e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://ventura.craigslist.org/bik/3513000614.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0744472329558292e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://visalia.craigslist.org/bik/3557690619.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7020414297711109e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://yubasutter.craigslist.org/bik/3557356871.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4064493476459256e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://yubasutter.craigslist.org/bik/3557356871.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6098513581074700e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://yubasutter.craigslist.org/bik/3555737077.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6237816224364180e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://yubasutter.craigslist.org/bik/3555607238.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5302437116593174e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://boulder.craigslist.org/bik/3549890543.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6546889646103172e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://cosprings.craigslist.org/bik/3557769705.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9816682284487511e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://cosprings.craigslist.org/bik/3557769705.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6423469738539462e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://cosprings.craigslist.org/bik/3557769705.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7163167024623769e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://cosprings.craigslist.org/bik/3557769705.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8316661857889319e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://cosprings.craigslist.org/bik/3557645054.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8233041508036832e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://eastco.craigslist.org/bik/3553709876.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3503046508421438e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://eastco.craigslist.org/bik/3472432038.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7121520450820924e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortcollins.craigslist.org/bik/3557821346.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8130715679480273e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortcollins.craigslist.org/bik/3557761977.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1343537021847739e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://rockies.craigslist.org/bid/3557532076.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7311014714448828e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://rockies.craigslist.org/bik/3545497491.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5296408836278905e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://rockies.craigslist.org/bik/3556165235.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6830465877437232e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://rockies.craigslist.org/bik/3556165235.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8970477861566829e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://pueblo.craigslist.org/bik/3557507322.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5759804573356987e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://pueblo.craigslist.org/bik/3555933896.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7565791305268728e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://westslope.craigslist.org/bik/3557657267.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0137176945564409e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://westslope.craigslist.org/bik/3545494368.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5296408836278905e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://westslope.craigslist.org/bik/3557297278.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.2172163971547652e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://westslope.craigslist.org/bik/3557262824.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6996056086348452e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://newlondon.craigslist.org/bik/3535410827.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4125930696675041e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://newlondon.craigslist.org/bik/3535410827.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0070324079295296e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://hartford.craigslist.org/bik/3521430819.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9613582309677322e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://newhaven.craigslist.org/bik/3546096117.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7297384867733393e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://newhaven.craigslist.org/bik/3557708089.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7092671307659849e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://nwct.craigslist.org/bik/3528816708.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7255082166752836e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://nwct.craigslist.org/bik/3528816708.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7255082166752836e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://delaware.craigslist.org/bik/3557790686.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6979481929904892e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://delaware.craigslist.org/bik/3557586664.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7994381720034806e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://washingtondc.craigslist.org/nva/bik/3557854996.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9919834220303348e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://washingtondc.craigslist.org/nva/bik/3557854996.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.7059580327606367e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://washingtondc.craigslist.org/doc/bik/3513613189.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5832238764831816e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://daytona.craigslist.org/bik/3557487222.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6799490179789698e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://daytona.craigslist.org/bik/3557292650.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7809846346825051e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://keys.craigslist.org/bik/3557660378.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5709271816775142e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://keys.craigslist.org/bik/3557660378.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6454515186421157e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://keys.craigslist.org/bik/3556982345.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5762191994028516e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://keys.craigslist.org/bik/3554676232.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.5866793598523167e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://keys.craigslist.org/bik/3554676232.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.3613961893360594e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://keys.craigslist.org/bik/3554676232.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.2020006479963087e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://keys.craigslist.org/bik/3554288420.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0035845133675654e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://miami.craigslist.org/mdc/bik/3557851975.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8490086228824857e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://miami.craigslist.org/mdc/bik/3512244847.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.3278555940021343e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://miami.craigslist.org/mdc/bik/3512244847.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1193722871557883e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://miami.craigslist.org/brw/bik/3557836223.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8556044975226297e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortmyers.craigslist.org/lee/bik/3557561337.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8147920580409419e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortmyers.craigslist.org/lee/bik/3557544582.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7051179101819561e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortmyers.craigslist.org/lee/bik/3557544582.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6580730716165818e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortmyers.craigslist.org/lee/bik/3557537514.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.2424023540946939e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortmyers.craigslist.org/lee/bik/3557536232.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8053973201008470e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://fortmyers.craigslist.org/lee/bik/3557532335.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8107485026853984e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://gainesville.craigslist.org/bik/3527616644.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 6.8141965134310789e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://gainesville.craigslist.org/bik/3557438497.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0284832931345262e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://gainesville.craigslist.org/bik/3557438497.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8725868438554336e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://gainesville.craigslist.org/bik/3557438497.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.3370881609188779e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://gainesville.craigslist.org/bik/3557438497.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0122430023853541e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://jacksonville.craigslist.org/bik/3557698266.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4072456772662690e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://lakeland.craigslist.org/bik/3557096323.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.2444696317006794e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://lakeland.craigslist.org/bik/3557084659.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.6132685386063235e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://lakecity.craigslist.org/bik/3509685081.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7084592645998767e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://lakecity.craigslist.org/bik/3510240830.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1923617690438888e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://lakecity.craigslist.org/bik/3535783582.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8260339084109798e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://ocala.craigslist.org/bik/3557648827.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7598478351826411e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://ocala.craigslist.org/bik/3557364368.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7800551470529894e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://ocala.craigslist.org/bik/3557364368.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8857274445937436e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://ocala.craigslist.org/bik/3557153908.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6450486163746295e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://okaloosa.craigslist.org/bik/3527533389.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6892048276278674e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://okaloosa.craigslist.org/bik/3527533389.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3978372203533352e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://okaloosa.craigslist.org/bik/3527533389.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0151569927232841e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://okaloosa.craigslist.org/bik/3527533389.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6283936215290932e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://okaloosa.craigslist.org/bik/3527533389.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7943847456808418e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://okaloosa.craigslist.org/bik/3508100732.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5778536187011725e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://okaloosa.craigslist.org/bik/3522970112.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8754505132338931e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orlando.craigslist.org/bik/3510708379.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.2980579912561133e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orlando.craigslist.org/bik/3557871311.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7149988056736118e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orlando.craigslist.org/bik/3557871311.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8564970309977727e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orlando.craigslist.org/bik/3553259722.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7052554191702161e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orlando.craigslist.org/bik/3557844750.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0116666307650974e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orlando.craigslist.org/bik/3557844750.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9298584414899792e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orlando.craigslist.org/bik/3542698202.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7857334144084012e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orlando.craigslist.org/bik/3542698202.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9985868291750517e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://orlando.craigslist.org/bik/3540542900.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6076809943884610e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://panamacity.craigslist.org/bik/3556441689.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7233685508785255e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://panamacity.craigslist.org/bik/3527215298.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4697031088010074e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://pensacola.craigslist.org/bik/3508850709.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8650055129116414e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sarasota.craigslist.org/bik/3557887888.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7648673601417201e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sarasota.craigslist.org/bik/3553213368.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6021855452969500e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sarasota.craigslist.org/bid/3542988207.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9226042706736749e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sarasota.craigslist.org/bid/3542988207.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9248948530717328e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sarasota.craigslist.org/bid/3552881152.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8159988084261950e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://sarasota.craigslist.org/bid/3552881152.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9030175913113071e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://miami.craigslist.org/mdc/bik/3557851975.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8490086228824857e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://miami.craigslist.org/mdc/bik/3512244847.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1193722871557883e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://miami.craigslist.org/brw/bik/3557836223.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8556044975226297e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://spacecoast.craigslist.org/bik/3557699081.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8226622982113042e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://spacecoast.craigslist.org/bik/3557699081.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.2749687762103818e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://spacecoast.craigslist.org/bik/3539413672.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5591244307360111e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://spacecoast.craigslist.org/bik/3539413672.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8137143921710983e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://spacecoast.craigslist.org/bik/3543081810.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3877487320109847e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://staugustine.craigslist.org/bik/3552064804.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.3391759571857815e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://staugustine.craigslist.org/bik/3520528150.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9689734256285139e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tallahassee.craigslist.org/bik/3546528404.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6479376245980163e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tallahassee.craigslist.org/bik/3545884313.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7690416931108852e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tallahassee.craigslist.org/bid/3556793642.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8595064041462348e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tallahassee.craigslist.org/bid/3556793642.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7873164383999105e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tallahassee.craigslist.org/bid/3556793642.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8351009411576078e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tallahassee.craigslist.org/bik/3541921612.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8928657845015054e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tallahassee.craigslist.org/bik/3541921612.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0226643903930506e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tampa.craigslist.org/psc/bik/3557860814.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6240497977555044e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://tampa.craigslist.org/pnl/bik/3557813800.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0940680625086453e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://treasure.craigslist.org/bik/3519609561.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4664100292005753e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://treasure.craigslist.org/bik/3557629317.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.3223601175056111e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://treasure.craigslist.org/bik/3547054503.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.4162058099522846e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://miami.craigslist.org/mdc/bik/3557894995.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8490086228824857e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://miami.craigslist.org/mdc/bik/3517682624.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6127768498241827e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://miami.craigslist.org/brw/bik/3529782383.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8292483711833682e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://miami.craigslist.org/mdc/bik/3557851975.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8490086228824857e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://albanyga.craigslist.org/bik/3504757449.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9736036905342950e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://albanyga.craigslist.org/bik/3504757449.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8601782893272504e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://athensga.craigslist.org/bik/3553170435.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8476314369680050e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://athensga.craigslist.org/bik/3553170435.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5621134901129439e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://athensga.craigslist.org/bik/3557448536.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7603533675297043e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://athensga.craigslist.org/bik/3557363602.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0268843635823872e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://athensga.craigslist.org/bik/3509195575.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7300574172378633e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://athensga.craigslist.org/bik/3509195575.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7590089886268626e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://augusta.craigslist.org/bik/3557684766.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4979268305347743e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://augusta.craigslist.org/bik/3557626075.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 1.6283486056136898e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://brunswick.craigslist.org/bik/3529637462.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5045138974641562e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://brunswick.craigslist.org/bik/3486294233.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7718871712582821e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://brunswick.craigslist.org/bik/3497632578.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7686399723743516e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://brunswick.craigslist.org/bik/3542623230.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6119636216092768e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://brunswick.craigslist.org/bik/3542623230.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6252064296418626e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://columbusga.craigslist.org/bid/3557820314.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6999168156065623e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://columbusga.craigslist.org/bik/3525374961.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0634260548113423e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://columbusga.craigslist.org/bik/3539689718.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.2448288639889488e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://columbusga.craigslist.org/bik/3515285785.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9257381609828276e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://columbusga.craigslist.org/bik/3549745658.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7356823647558115e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://macon.craigslist.org/bik/3557610080.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.4853072772436452e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://macon.craigslist.org/bik/3556317311.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5544406749994081e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://macon.craigslist.org/bik/3554948390.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7674750292590339e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://macon.craigslist.org/bik/3554948390.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8572963591515982e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://macon.craigslist.org/bik/3554948390.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6759322790746082e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://nwga.craigslist.org/bik/3549999097.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8191876878633298e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://nwga.craigslist.org/bik/3549999097.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5852427581913251e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://nwga.craigslist.org/bik/3549999097.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5787037554001740e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://nwga.craigslist.org/bik/3555372176.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7641363005413833e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://nwga.craigslist.org/bik/3545588908.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.2725799635123154e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://nwga.craigslist.org/bik/3553349173.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1638379619537949e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://savannah.craigslist.org/bik/3545973105.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7149483886761216e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://savannah.craigslist.org/bik/3495845060.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9689734256285139e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://savannah.craigslist.org/bik/3543512745.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.8219791307788472e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://statesboro.craigslist.org/bik/3492445218.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7391281970956710e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://statesboro.craigslist.org/bik/3545351572.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7712118269436015e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://statesboro.craigslist.org/bik/3536599525.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9029977769224757e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://statesboro.craigslist.org/bik/3507741120.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0117689597497671e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://statesboro.craigslist.org/bik/3522290103.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7121807094795314e-01, 4.2420000000000002e+01 ]

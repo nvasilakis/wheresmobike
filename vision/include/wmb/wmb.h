@@ -57,12 +57,8 @@ class WmbVision
   void proprocessImage(const MatColor& img);
 
 public:
-  WmbVision(const double cannyThresh0, const double cannyThresh1)
-    : wheels_(2)
-    , wheelRadius_(-1.0)
-    , cannyThreshHigh_(std::max(cannyThresh0, cannyThresh1))
-    , cannyThreshLow_(std::min(cannyThresh0, cannyThresh1))
-  {}
+  WmbVision(const double cannyThresh0, const double cannyThresh1);
+  ~WmbVision();
 
   bool process(const MatColor &img, int &userRating);
   cv::Mat_<double> getFeatures() const;

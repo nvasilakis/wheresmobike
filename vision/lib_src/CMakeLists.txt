@@ -1,8 +1,13 @@
 add_library(${PROJECT_NAME}
+  wmb_ctor.cpp
   wmb.cpp
+  wmb_pre.cpp
+  wmb_params.cpp
+  wmb_wheels.cpp
+  wmb_fork.cpp
+  
   bike_persistance.cpp
   viz.cpp
-  wmb_params.cpp
   result.cpp
   bike_features.cpp
 )
