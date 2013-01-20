@@ -99,4 +99,9 @@ void displayLines(const MatGray &img, const Lines &lines, const string &name)
   imshow(name+" lines", rgb);
 }
 
+void vizCleanup()
+{
+  destroyAllWindows();
+}
+
 } // namespace wmb

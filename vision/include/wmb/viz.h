@@ -17,6 +17,7 @@ void displayBike(const Bike &bike);
 void displayCircles(const MatGray &img, const Circles &circles, const std::string &name = "");
 void displayLines(const MatGray &img, const Lines &lines, const std::string &name="");
 
+void vizCleanup();
 
 } // namespace wmb
 
