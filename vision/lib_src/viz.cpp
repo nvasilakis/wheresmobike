@@ -122,9 +122,6 @@ void displayLineSegments(const MatGray &img, const vector<Vec4f> &segments, cons
 
 void displayColorHistograms(const MatND &hist, const string &name)
 {
-  double maxVal = 0.0;
-  minMaxLoc(hist, nullptr, &maxVal, nullptr, nullptr);
-
   const int scale = 10;
   const int sbins = hist.cols;
   const int hbins = hist.rows;
@@ -136,7 +133,7 @@ void displayColorHistograms(const MatND &hist, const string &name)
     for (int s = 0; s < sbins; s++)
     {
       float binVal = hist.at<float>(h, s);
-      int intensity = cvRound(binVal * (255. / maxVal));
+      int intensity = cvRound(binVal * 255.f);
       rectangle(histImg, Point(h * scale, s * scale),
           Point((h + 1) * scale - 1, (s + 1) * scale - 1),
           Scalar::all(intensity), CV_FILLED);

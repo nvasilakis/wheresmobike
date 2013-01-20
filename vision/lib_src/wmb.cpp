@@ -49,8 +49,7 @@ bool WmbVision::process(const MatColor & img)
 
 MatFeatures WmbVision::getFeatures() const
 {
-
-  MatFeatures res(1, 2);
+  MatFeatures res = hist_.reshape(1, hist_.total());
 
   float x1 = wheelL_[0];
   float y1 = wheelL_[1];
@@ -60,10 +59,9 @@ MatFeatures WmbVision::getFeatures() const
   float dist = sqrt((x1 - x2) * (x1 - x2) +
                     (y1 - y2) * (y1 - y2));
 
-  res(0) = wheelRadius_ / dist;
-  res(1) = 42.42;
+  res.push_back(wheelRadius_ / dist);
 
-  return res;
+  return res.reshape(1, 1);
 
 }
 

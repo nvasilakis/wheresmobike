@@ -51,7 +51,7 @@ class WmbVision
   MatGray canny_;
 
   Circles circlesL_, circlesR_, allCircles_;
-  double wheelRadius_;
+  float wheelRadius_;
   cv::Vec3f wheelL_;
   cv::Vec3f wheelR_;
 
