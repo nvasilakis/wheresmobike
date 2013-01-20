@@ -1,0 +1,190 @@
+%YAML:1.0
+bike_features:
+   id: "http://auburn.craigslist.org/bik/3515537166.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9257381609828276e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://auburn.craigslist.org/bik/3551247064.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.3216315932049317e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://auburn.craigslist.org/bik/3545167632.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.8259139334030196e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://auburn.craigslist.org/bik/3536837280.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.3042525179705834e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://bham.craigslist.org/bik/3529522564.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0975035491341507e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://bham.craigslist.org/bik/3529522564.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.1377168074809142e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://bham.craigslist.org/bik/3512458202.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6866366498913880e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://bham.craigslist.org/bik/3555250096.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.0467074726508048e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://bham.craigslist.org/bik/3498931966.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6449651393590812e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://dothan.craigslist.org/bik/3555661920.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6651987457497656e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://dothan.craigslist.org/bik/3547795766.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6136396613967322e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://dothan.craigslist.org/bik/3547795766.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.0461843412789346e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://dothan.craigslist.org/bik/3548005951.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5716577889713998e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3552176758.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.3964278751050347e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3536978616.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6232628297093724e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3536978616.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7415076113723502e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3536933284.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7415076113723502e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3536933284.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.6232628297093724e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3535137324.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.2290906973303509e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3535137324.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9643027313132081e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3530315802.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 3.5615177080892002e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3530315802.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 1.9408440433932306e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3530315802.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7347177275240853e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3515380686.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9421336810748744e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3515380686.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.9440106078480455e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3490082899.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.5855477923007081e-01, 4.2420000000000002e+01 ]
+bike_features:
+   id: "http://shoals.craigslist.org/bik/3490082899.html"
+   features: !!opencv-matrix
+      rows: 2
+      cols: 1
+      dt: d
+      data: [ 2.7305377096360045e-01, 4.2420000000000002e+01 ]

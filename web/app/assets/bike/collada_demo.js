@@ -16,46 +16,46 @@ var rdelta = 0.1;
 
 var loader = new THREE.ColladaLoader();
 loader.options.convertUpAxis = true;
-loader.load( './bicycle.dae', function ( collada ) {
-    
+loader.load( '/assets/bicycle.dae', function ( collada ) {
+
     dae = collada.scene;
     skin = collada.skins[ 0 ];
-    
+
     dae.scale.x = dae.scale.y = dae.scale.z = 0.15;
     dae.updateMatrix();
-    
+
     init();
     animate();
-    
+
 } );
 
 function init() {
-    
+
     container = document.createElement( 'div' );
     document.body.appendChild( container );
-    
+
     camera = new THREE.PerspectiveCamera( 45, w /
-				          h, 1, 2000 );
+                                          h, 1, 2000 );
     camera.position.set( 2, 2, 3 );
-    
+
     scene = new THREE.Scene();
-    
+
     // Grid
-    
+
     var size = 14, step = 1;
-    
-    
+
+
     // Add the COLLADA
-    
+
     scene.add( dae );
-    
+
     //				particleLight = new THREE.Mesh( new THREE.SphereGeometry( 4, 8, 8 ), new THREE.MeshBasicMaterial( { color: 0xffffff } ) );
     //				scene.add( particleLight );
-    
+
     // Lights
-    
+
     scene.add( new THREE.AmbientLight( 0xcccccc ) );
-    
+
     //				var directionalLight = new THREE.DirectionalLight(/*Math.random() * 0xffffff*/0xeeeeee );
     //				directionalLight.position.x = Math.random() - 0.5;
     //				directionalLight.position.y = Math.random() - 0.5;
@@ -67,29 +67,28 @@ function init() {
     //				pointLight.position = particleLight.position;
     //				scene.add( pointLight );
 
-				renderer = new THREE.WebGLRenderer();
+                                renderer = new THREE.WebGLRenderer();
     renderer.setSize( w, h);
-    
+
     container.appendChild( renderer.domElement );
-    
+
     stats = new Stats();
     stats.domElement.style.position = 'absolute';
     stats.domElement.style.top = '0px';
     //				container.appendChild( stats.domElement );
-    
+
     //
-    
+
     window.addEventListener( 'resize', onWindowResize, false );
     document.addEventListener( 'keydown', onKeyDown, false );    
 }
 
 function onWindowResize() {
-    
+
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
-    
+
     renderer.setSize( w , h);
-    
 }
 
 //
@@ -130,7 +129,6 @@ function animate() {
     stats.update();
 
 }
-
 
 function onKeyDown ( event ) {
     
