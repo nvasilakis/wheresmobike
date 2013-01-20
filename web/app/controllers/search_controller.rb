@@ -15,13 +15,16 @@ class SearchController < ApplicationController
     @date = Date.strptime(params[:date], '%m/%d/%Y').to_time
 
     @response = {
-      :search => {
-        :picture => "/uploaded/#{File.basename @picture}"
-      },
+      :search => {},
       :results => Searcher.search(:picture => @picture,
                                   :description => @description,
                                   :date => @date)
     }
+
+    if @picture.present?
+      @response[:search][:picture] =
+        "/uploaded/#{File.basename @picture}"
+    end
 
     # uncomment to test waiting screen
     sleep 5

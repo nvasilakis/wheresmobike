@@ -31,11 +31,19 @@ var WheresMoBike = {
     },
 
     showSearchResults: function (response) {
-        var results = response['results'];
-        var resultsDiv = $('#search-results');
-        var resultsUl = resultsDiv.children('ul');
+        var results = response['results'],
+            resultsDiv = $('#search-results'),
+            resultsUl = resultsDiv.children('ul'),
+            searchSummary = resultsDiv.children('.summary');
+
+        var pictureUrl = response['search']['picture'];
 
         resultsUl.empty();
+        searchSummary.empty();
+
+        if (pictureUrl) {
+            searchSummary.append($('<img src="' + pictureUrl + '" />'));
+        }
 
         if (results.length == 0) {
             resultsDiv.children('.no-results').show();
