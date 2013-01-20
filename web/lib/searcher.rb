@@ -7,6 +7,46 @@ module Searcher
     @solr_url = url
   end
 
+  def self.inpipe_name(name)
+    @inpipe_name = name
+  end
+
+  def self.outpipe_name(name)
+    @outpipe_name = name
+  end
+
+  def self.comparer_command(command)
+    @comparer_command = command
+  end
+
+  def self.start
+    `mkfifo #{@inpipe_name}` unless File.exists? @inpipe_name
+    `mkfifo #{@outpipe_name}` unless File.exists? @outpipe_name
+    @inpipe = File.open(@inpipe_name, 'r+')
+    @outpipe = File.open(@outpipe_name, 'w+')
+
+    pid = spawn(@comparer_command, :in => @outpipe_name, :out => @inpipe_name)
+    puts "Started KNN pid=#{pid}"
+  end
+
+  def self.search_image(paths)
+    res_file = "/tmp/WheresMoBikeSearch-#{SecureRandom.hex(16)}"
+    @outpipe.puts "#{paths.size} #{res_file} #{paths.join ' '}"
+    @outpipe.flush
+    code = @inpipe.gets
+
+    case code
+    when 'ACK'
+      file = File.open(res_file)
+      xml = Nokogiri::XML(file)
+      file.close
+      xml
+    else
+      puts "Image search failed: #{code}"
+      nil
+    end
+  end
+
   def self.search(options={})
     solr_uri = URI(@solr_url)
     solr_params = {
