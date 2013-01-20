@@ -26,8 +26,9 @@ bool WmbVision::process(const MatColor & img)
   // find wheels
   if(!findWheels()) return false;
   // find fork
-//  if(!findFork()) return false;
-  findFork();
+  if(!findForks()) return false;
+//  findForks();
+  buildColorHistograms(img);
 
 #ifndef NDEBUG
   imshow("img", img);
@@ -39,6 +40,7 @@ bool WmbVision::process(const MatColor & img)
   displayLines(canny_, linesL_, "left");
   displayLines(canny_, linesR_, "right");
   displayLineSegments(smallGray_, {forkL_, forkR_}, "fork");
+  displayColorHistograms(hist_);
   waitKey(0);
 #endif
 

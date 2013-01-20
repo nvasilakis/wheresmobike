@@ -5,6 +5,7 @@ add_library(${PROJECT_NAME}
   wmb_params.cpp
   wmb_wheels.cpp
   wmb_fork.cpp
+  wmb_hist.cpp
   
   bike_persistance.cpp
   viz.cpp

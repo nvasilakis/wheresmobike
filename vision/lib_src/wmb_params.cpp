@@ -31,4 +31,7 @@ double maxLineDistSqFromCircle(const double radius) { return (radius * 0.35) * (
 double optimalForkAngle()           { return 20.0 * TAU / 360.0; }
 double maxForkAngleDeviation()      { return 20.0 * TAU / 360.0; }
 
+// histogram generation
+float forkWidth(float height)       { return height * 0.05; }
+
 } // namespace wmb

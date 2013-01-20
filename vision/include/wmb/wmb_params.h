@@ -28,6 +28,9 @@ extern double maxLineDistSqFromCircle(const double radius);
 extern double optimalForkAngle();
 extern double maxForkAngleDeviation();
 
+// histogram generation
+extern float forkWidth(float height);
+
 } // namespace wmb
 
 #endif /* WMB_PARAMS_H_ */

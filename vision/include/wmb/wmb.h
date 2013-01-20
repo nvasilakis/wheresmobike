@@ -46,6 +46,7 @@ class WmbVision
   const double cannyThreshLow_;
 
   MatColor small_;
+  double scale_;
   MatGray smallGray_;
   MatGray canny_;
 
@@ -57,9 +58,12 @@ class WmbVision
   Lines allLines_, linesL_, linesR_;
   cv::Vec4f forkL_, forkR_;
 
+  cv::MatND hist_;
+
   void proprocessImage(const MatColor& img);
   bool findWheels();
-  bool findFork();
+  bool findForks();
+  void buildColorHistograms(const MatColor &img);
 
 public:
   WmbVision(const double cannyThresh0, const double cannyThresh1);

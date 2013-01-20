@@ -127,9 +127,9 @@ static void findBestLine(Lines &lines, const Vec3f & wheel,
   }
 }
 
-bool WmbVision::findFork()
+bool WmbVision::findForks()
 {
-  // find fork
+  // find forks
   HoughLines(canny_, allLines_, linesDistanceResolution(), linesAngleResolution(),
       linesAccumThresh(wheelRadius_));
 
@@ -137,10 +137,10 @@ bool WmbVision::findFork()
 
   findLinesFromCircle(allLines_, wheelL_, linesL_, maxDistSq, true);
   findLinesFromCircle(allLines_, wheelR_, linesR_, maxDistSq, false);
+  if(linesL_.empty() && linesR_.empty()) return false;
+
   findBestLine(linesL_, wheelL_, forkL_);
   findBestLine(linesR_, wheelR_, forkR_);
-
-  if(linesL_.empty() && linesR_.empty()) return false;
 
   return true;
 }

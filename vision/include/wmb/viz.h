@@ -18,7 +18,7 @@ void displayCircles(const MatGray &img, const Circles &circles, const std::strin
 void displayLines(const MatGray &img, const Lines &lines, const std::string &name="");
 void displayLineSegments(const MatGray &img, const std::vector<cv::Vec4f> &segments,
     const std::string &name = "");
-
+void displayColorHistograms(const cv::MatND &hist, const std::string &name = "");
 
 void vizCleanup();
 
