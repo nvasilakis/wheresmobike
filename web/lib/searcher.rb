@@ -28,6 +28,7 @@ module Searcher
     @outpipe = File.open(@outpipe_name, 'w+')
 
     pid = spawn(@comparer_command, :in => @outpipe_name, :out => @inpipe_name)
+    @inpipe.gets # HELO
     puts "Started KNN pid=#{pid}"
   end
 
@@ -50,12 +51,18 @@ module Searcher
       xml = Nokogiri::XML(file)
       file.close
       xml.css('postid').map do |id|
+        # NB The name of this field is wrong, should've been url
         id.content
       end
     else
       puts "Image search failed: #{code}"
       []
     end
+  end
+
+  def self.postid(url)
+    file = url.split('/').last
+    file.split('.').first
   end
 
   def self.search(options={})
@@ -67,16 +74,16 @@ module Searcher
       puts old_name
       new_name = "/tmp/#{SecureRandom.hex 16}#{picture.original_filename}"
       FileUtils.cp(old_name, new_name)
-      post_ids = self.search_image [new_name]
+      urls = self.search_image [new_name]
     else
-      post_ids = []
+      urls = []
     end
 
     q = options[:description].present? ?
         options[:description] + " AND " : ""
 
     q = q + "date:[#{options[:date].utc.iso8601} TO NOW] " +
-      post_ids.map { |id| "postId:#{id}" }.join(' ')
+      urls.map { |url| "postId:#{postid url}" }.join(' ')
     solr_params = {
       :q => q,
       :rows => 20,
