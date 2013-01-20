@@ -1,2 +1,5 @@
 development:
   solr_url: 'http://ec2-50-19-164-82.compute-1.amazonaws.com:8080/solr/core0/select'
+  inpipe_name: '/tmp/WheresMoBikeIn'
+  outpipe_name: '/tmp/WheresMoBikeOut'
+  comparer_command: ''
