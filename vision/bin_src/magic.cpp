@@ -66,9 +66,8 @@ EStatus doIt(CvKNearest &knn, WmbVision &wmb,
     if (!success) continue;
 
     MatResult features = wmb.getFeatures();
-    DEBUG(features.cols);
+    DEBUG(features(0));
     samples.push_back(features);
-    DEBUG(samples.rows);
   }
 
   DEBUG(samples.rows);
@@ -81,25 +80,30 @@ EStatus doIt(CvKNearest &knn, WmbVision &wmb,
   std::unordered_map<int, float> votes;
   const int lim = neighborResponses.cols * neighborResponses.rows;
   for (int i = 0; i < lim; i++) {
-    int id = neighborResponses(i);
-    ++votes[id];
+    const int id = neighborResponses(i);
+    const float d = dist(i);
+    DEBUG(d);
+    votes[id] += 1.0f/d;
   }
 
-  int best_id = -1;
-  float most_votes = 0;
-
-  for (const auto &v : votes) {
-    if (v.second > most_votes) {
-      most_votes = v.second;
-      best_id = v.first;
-    }
-  }
-  DEBUG(best_id);
-  DEBUG(most_votes);
+//  int best_id = -1;
+//  float most_votes = 0;
+//
+//  for (const auto &v : votes) {
+//    if (v.second > most_votes) {
+//      most_votes = v.second;
+//      best_id = v.first;
+//    }
+//  }
+//  DEBUG(best_id);
+//  DEBUG(most_votes);
 
   Results results;
+  results.reserve(votes.size());
 
-  results.emplace_back(ids[best_id], "", most_votes);
+  for(const auto &v : votes) {
+    results.emplace_back(ids[v.first], "", v.second);
+  }
 
   writeAll(results, fs);
   fs.release();

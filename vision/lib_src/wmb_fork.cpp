@@ -19,13 +19,6 @@ using namespace cv;
 namespace wmb
 {
 
-//static float distSq(float x0, float y0, float x1, float y1)
-//{
-//  const float dx = x0-x1;
-//  const float dy = y0-y1;
-//  return dx*dx + dy*dy;
-//}
-
 static bool isGoodLine(const Vec3f &wheel, const float maxDistSq,
     const Vec2f &line, const bool leftSide)
 {
@@ -56,12 +49,12 @@ static bool isGoodLine(const Vec3f &wheel, const float maxDistSq,
   const float distSq = num*num/denSq;
 
   bool ret = distSq <= maxDistSq;
-  if(ret) {
-    DEBUG(rho);
-    DEBUG(theta);
-    DEBUG(leftSide);
-
-  }
+//  if(ret) {
+//    DEBUG(rho);
+//    DEBUG(theta);
+//    DEBUG(leftSide);
+//
+//  }
   return ret;
 }
 
@@ -70,10 +63,10 @@ static void findLinesFromCircle(const Lines &allLines, const Vec3f &wheel,
 {
   goodLines.clear();
 
-  DEBUG(wheel[0]);
-  DEBUG(wheel[1]);
-  DEBUG(wheel[2]);
-  DEBUG(maxDistSq);
+//  DEBUG(wheel[0]);
+//  DEBUG(wheel[1]);
+//  DEBUG(wheel[2]);
+//  DEBUG(maxDistSq);
 
   for(const Vec2f &line : allLines) {
     // check original orientation
