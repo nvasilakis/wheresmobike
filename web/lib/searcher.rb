@@ -1,5 +1,6 @@
 require 'net/http'
 require 'nokogiri'
+require 'tempfile'
 
 module Searcher
 
@@ -20,6 +21,7 @@ module Searcher
   end
 
   def self.start
+    return unless @comparer_command.present?
     `mkfifo #{@inpipe_name}` unless File.exists? @inpipe_name
     `mkfifo #{@outpipe_name}` unless File.exists? @outpipe_name
     @inpipe = File.open(@inpipe_name, 'r+')
@@ -30,28 +32,53 @@ module Searcher
   end
 
   def self.search_image(paths)
-    res_file = "/tmp/WheresMoBikeSearch-#{SecureRandom.hex(16)}"
-    @outpipe.puts "#{paths.size} #{res_file} #{paths.join ' '}"
+    return [] unless @comparer_command.present? && paths.present?
+
+    res_file = "/tmp/WheresMoBikeSearch-#{SecureRandom.hex(16)}.xml"
+
+    msg = "#{paths.size} #{res_file} #{paths.join ' '}"
+    puts "Sending message to searcher: #{msg}"
+    @outpipe.puts msg
     @outpipe.flush
+
+    puts "Waiting for answer..."
     code = @inpipe.gets
 
     case code
-    when 'ACK'
+    when /ACK/
       file = File.open(res_file)
       xml = Nokogiri::XML(file)
       file.close
-      xml
+      xml.css('postid').map do |id|
+        id.content
+      end
     else
       puts "Image search failed: #{code}"
-      nil
+      []
     end
   end
 
   def self.search(options={})
     solr_uri = URI(@solr_url)
+
+    if options[:picture].present?
+      picture = options[:picture]
+      old_name = picture.tempfile.path
+      puts old_name
+      new_name = "/tmp/#{SecureRandom.hex 16}#{picture.original_filename}"
+      FileUtils.cp(old_name, new_name)
+      post_ids = self.search_image [new_name]
+    else
+      post_ids = []
+    end
+
+    q = options[:description].present? ?
+        options[:description] + " AND " : ""
+
+    q = q + "date:[#{options[:date].utc.iso8601} TO NOW] " +
+      post_ids.map { |id| "postId:#{id}" }.join(' ')
     solr_params = {
-      :q => options[:description] + " AND " +
-            "date:[#{options[:date].utc.iso8601} TO NOW]",
+      :q => q,
       :rows => 20,
       :indent => 'on'
     }
@@ -75,8 +102,6 @@ module Searcher
         :url => url ? url.content : nil
       }
     end
-
-    solr_results
 
   end
 
