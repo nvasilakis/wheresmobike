@@ -12,12 +12,15 @@
 #include "wmb/logging.h"
 #include "wmb/result.h"
 #include "wmb/bike_features.h"
+#include "wmb/wmb.h"
 
 using namespace std;
 using namespace cv;
 using namespace wmb;
 
 #define ever ;;
+
+const int K = 20;
 
 enum class EStatus
 {
@@ -29,7 +32,7 @@ enum class EStatus
   END_OF_INPUT
 };
 
-EStatus doIt(CvKNearest &knn)
+EStatus doIt(CvKNearest &knn, WmbVision &wmb)
 {
   unsigned n;
   string outputFileName;
@@ -49,15 +52,28 @@ EStatus doIt(CvKNearest &knn)
 
   Results results;
 
+  cv::Mat_<float> samples;
+  cv::Mat_<float> knnResults;
+
   for(int i=0; i<n; ++i) {
     cin >> imageFileName;
     image = imread(imageFileName, CV_LOAD_IMAGE_COLOR);
+
     if(image.empty()) {
       return EStatus::READ_ERROR;
     }
-    if(i&1)
-      results.emplace_back(imageFileName, outputFileName, ((double)(i))/n);
+
+    bool success = wmb.process(image);
+
+    if (!success) continue;
+
+    cv::Mat_<float> features = wmb.getFeatures();
+    samples.push_back(features);
   }
+
+  knn.find_nearest(samples, K, &knnResults);
+
+  results.emplace_back("3502549351", outputFileName, 666);
 
   writeAll(results, fs);
   fs.release();
@@ -72,15 +88,17 @@ int main(int argc, char ** argv)
     exit(-1);
   }
 
+  WmbVision wmb(150.0, 75.0);
+
   FileStorage fs(argv[1], FileStorage::READ);
 
-  FileNode r = fs.root();
+  FileNode r = fs["bike_features"];
   CV_Assert(r.isSeq());
 
-  cv::Mat_<double> trainData(r.size(), 2);
+  cv::Mat_<float> trainData(r.size(), 2);
   CV_DbgAssert(trainData.cols == 2);
   std::vector<std::string> ids(r.size());
-  cv::Mat_<double> responses(r.size(), 1);
+  cv::Mat_<float> responses(r.size(), 1);
 
   for (int i = 0; i < r.size(); i++) {
     BikeFeatures bf;
@@ -93,11 +111,11 @@ int main(int argc, char ** argv)
   CvKNearest knn;
   CvMat trainData2 = trainData;
   CvMat responses2 = responses;
-  knn.train(&trainData2, &responses2, nullptr, false, 20, false);
+  knn.train(&trainData2, &responses2, nullptr, false, K, false);
 
   for(ever) {
     try {
-      EStatus status = doIt(knn);
+      EStatus status = doIt(knn, wmb);
       switch(status) {
       case EStatus::OK:
         cout << "ACK" << endl;

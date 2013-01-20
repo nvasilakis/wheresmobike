@@ -44,18 +44,18 @@ bool WmbVision::process(const MatColor & img)
   return true;
 }
 
-cv::Mat_<double> WmbVision::getFeatures() const
+MatResult WmbVision::getFeatures() const
 {
 
-  cv::Mat_<double> res(2, 1);
+  MatResult res(2, 1);
 
-  double x1 = wheelL_[0];
-  double y1 = wheelL_[1];
-  double x2 = wheelR_[0];
-  double y2 = wheelR_[1];
+  float x1 = wheelL_[0];
+  float y1 = wheelL_[1];
+  float x2 = wheelR_[0];
+  float y2 = wheelR_[1];
 
-  double dist = sqrt((x1 - x2) * (x1 - x2) +
-                     (y1 - y2) * (y1 - y2));
+  float dist = sqrt((x1 - x2) * (x1 - x2) +
+                    (y1 - y2) * (y1 - y2));
 
   res(0) = wheelRadius_ / dist;
   res(1) = 42.42;
