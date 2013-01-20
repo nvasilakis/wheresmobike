@@ -39,7 +39,7 @@ void WmbVision::buildColorHistograms(const MatColor &img)
 
   // Quantize the hue to 30 levels
   // and the saturation to 32 levels
-  int hbins = 30, sbins = 32;
+  int hbins = 30, sbins = 8;
   int histSize[] =
   { hbins, sbins };
   // hue varies from 0 to 179, see cvtColor
