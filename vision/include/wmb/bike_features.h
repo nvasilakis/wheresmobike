@@ -12,13 +12,15 @@
 
 #include <opencv2/core/core.hpp>
 
+#include "wmb/wmb.h"
+
 namespace wmb
 {
 
   struct BikeFeatures
   {
     std::string id;
-    cv::Mat_<double> features;
+    MatResult features;
 
     void read(const cv::FileNode &n);
     void write(cv::FileStorage &fs) const;

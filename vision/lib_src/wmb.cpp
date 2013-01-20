@@ -47,7 +47,7 @@ bool WmbVision::process(const MatColor & img)
 MatResult WmbVision::getFeatures() const
 {
 
-  MatResult res(2, 1);
+  MatResult res(1, 2);
 
   float x1 = wheelL_[0];
   float y1 = wheelL_[1];

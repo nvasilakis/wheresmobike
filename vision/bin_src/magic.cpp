@@ -32,7 +32,8 @@ enum class EStatus
   END_OF_INPUT
 };
 
-EStatus doIt(CvKNearest &knn, WmbVision &wmb)
+EStatus doIt(CvKNearest &knn, WmbVision &wmb,
+             const std::vector<std::string> &ids)
 {
   unsigned n;
   string outputFileName;
@@ -50,10 +51,7 @@ EStatus doIt(CvKNearest &knn, WmbVision &wmb)
     return EStatus::WRITE_ERROR;
   }
 
-  Results results;
-
-  cv::Mat_<float> samples;
-  cv::Mat_<float> knnResults;
+  MatResult samples;
 
   for(int i=0; i<n; ++i) {
     cin >> imageFileName;
@@ -67,13 +65,41 @@ EStatus doIt(CvKNearest &knn, WmbVision &wmb)
 
     if (!success) continue;
 
-    cv::Mat_<float> features = wmb.getFeatures();
+    MatResult features = wmb.getFeatures();
+    DEBUG(features.cols);
     samples.push_back(features);
+    DEBUG(samples.rows);
   }
 
-  knn.find_nearest(samples, K, &knnResults);
+  DEBUG(samples.rows);
+  MatResult neighborResponses;
+  MatResult dist;
+  knn.find_nearest(samples, K, nullptr, nullptr, &neighborResponses, &dist);
+  CV_DbgAssert(K == neighborResponses.cols);
+  CV_DbgAssert(K == dist.cols);
 
-  results.emplace_back("3502549351", outputFileName, 666);
+  std::unordered_map<int, float> votes;
+  const int lim = neighborResponses.cols * neighborResponses.rows;
+  for (int i = 0; i < lim; i++) {
+    int id = neighborResponses(i);
+    ++votes[id];
+  }
+
+  int best_id = -1;
+  float most_votes = 0;
+
+  for (const auto &v : votes) {
+    if (v.second > most_votes) {
+      most_votes = v.second;
+      best_id = v.first;
+    }
+  }
+  DEBUG(best_id);
+  DEBUG(most_votes);
+
+  Results results;
+
+  results.emplace_back(ids[best_id], "", most_votes);
 
   writeAll(results, fs);
   fs.release();
@@ -95,14 +121,15 @@ int main(int argc, char ** argv)
   FileNode r = fs["bike_features"];
   CV_Assert(r.isSeq());
 
-  cv::Mat_<float> trainData(r.size(), 2);
+  MatResult trainData(r.size(), 2);
   CV_DbgAssert(trainData.cols == 2);
   std::vector<std::string> ids(r.size());
-  cv::Mat_<float> responses(r.size(), 1);
+  MatResult responses(r.size(), 1);
 
   for (int i = 0; i < r.size(); i++) {
     BikeFeatures bf;
     r[i] >> bf;
+    DEBUG(bf.id);
     trainData.row(i) = bf.features;
     ids[i] = bf.id;
     responses(i) = i;
@@ -113,9 +140,11 @@ int main(int argc, char ** argv)
   CvMat responses2 = responses;
   knn.train(&trainData2, &responses2, nullptr, false, K, false);
 
+  cout << "HELO" << endl;
+
   for(ever) {
     try {
-      EStatus status = doIt(knn, wmb);
+      EStatus status = doIt(knn, wmb, ids);
       switch(status) {
       case EStatus::OK:
         cout << "ACK" << endl;
