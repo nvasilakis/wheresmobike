@@ -21,7 +21,7 @@ namespace wmb
   {
     std::string postid;
     std::string imagename;
-    MatResult features;
+    MatFeatures features;
 
     void read(const cv::FileNode &n);
     void write(cv::FileStorage &fs) const;

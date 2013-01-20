@@ -7,7 +7,7 @@
 #include <iostream>
 
 #include <opencv2/highgui/highgui.hpp>
-#include <opencv2/ml/ml.hpp>
+#include <opencv2/features2d/features2d.hpp>
 
 #include "wmb/logging.h"
 #include "wmb/result.h"
@@ -32,8 +32,8 @@ enum class EStatus
   END_OF_INPUT
 };
 
-EStatus doIt(CvKNearest &knn, WmbVision &wmb,
-             const std::vector<std::string> &ids)
+EStatus doIt(Ptr<DescriptorMatcher> &matcher, WmbVision &wmb,
+             const vector<string> &ids)
 {
   unsigned n;
   string outputFileName;
@@ -51,7 +51,7 @@ EStatus doIt(CvKNearest &knn, WmbVision &wmb,
     return EStatus::WRITE_ERROR;
   }
 
-  MatResult samples;
+  MatFeatures queryDescriptors;
 
   for(unsigned i=0; i<n; ++i) {
     cin >> imageFileName;
@@ -65,25 +65,24 @@ EStatus doIt(CvKNearest &knn, WmbVision &wmb,
 
     if (!success) continue;
 
-    MatResult features = wmb.getFeatures();
+    MatFeatures features = wmb.getFeatures();
     DEBUG(features(0));
-    samples.push_back(features);
+    queryDescriptors.push_back(features);
   }
 
-  DEBUG(samples.rows);
-  MatResult neighborResponses;
-  MatResult dist;
-  knn.find_nearest(samples, K, nullptr, nullptr, &neighborResponses, &dist);
-  CV_DbgAssert(K == neighborResponses.cols);
-  CV_DbgAssert(K == dist.cols);
+  DEBUG(queryDescriptors.rows);
+  vector<vector<DMatch>> matches;
+  matcher->knnMatch(queryDescriptors, matches, K);
+
 
   std::unordered_map<int, float> votes;
-  const int lim = neighborResponses.cols * neighborResponses.rows;
-  for (int i = 0; i < lim; i++) {
-    const int id = neighborResponses(i);
-    const float d = dist(i);
-    DEBUG(d);
-    votes[id] += 1.0f/d;
+  for (const vector<DMatch> &dmatches : matches) {
+    for(const DMatch &dmatch : dmatches) {
+      DEBUG(dmatch.trainIdx);
+      DEBUG(dmatch.imgIdx);
+      DEBUG(dmatch.distance);
+      votes[dmatch.imgIdx] += 1.0f/dmatch.distance;
+    }
   }
 
 //  int best_id = -1;
@@ -125,30 +124,40 @@ int main(int argc, char ** argv)
   FileNode r = fs["bike_features"];
   CV_Assert(r.isSeq());
 
-  MatResult trainData(r.size(), 2);
-  CV_DbgAssert(trainData.cols == 2);
-  std::vector<std::string> ids(r.size());
-  MatResult responses(r.size(), 1);
-
+  unordered_map<string, MatFeatures> posts;
+  posts.reserve(r.size());
   for (unsigned i = 0; i < r.size(); i++) {
     BikeFeatures bf;
     r[i] >> bf;
-//    DEBUG(bf.postid);
-    trainData.row(i) = bf.features;
-    ids[i] = bf.postid;
-    responses(i) = i;
+    posts[bf.postid].push_back(bf.features);
   }
 
-  CvKNearest knn;
-  CvMat trainData2 = trainData;
-  CvMat responses2 = responses;
-  knn.train(&trainData2, &responses2, nullptr, false, K, false);
+  DEBUG(posts.size());
+
+  vector<string> ids;               ids.reserve(posts.size());
+  vector<Mat> descriptors;  descriptors.reserve(posts.size());
+  for(const auto & post : posts) {
+    ids.emplace_back(post.first);
+    descriptors.emplace_back(post.second.clone());
+    DEBUG(post.second.rows);
+    CV_DbgAssert(descriptors.back().type() == CV_32FC1);
+  }
+  assert(posts.size() == ids.size());
+  assert(posts.size() == descriptors.size());
+
+  DEBUG_STR("Creating Flann based matcher");
+  Ptr<DescriptorMatcher> matcher = DescriptorMatcher::create("FlannBased");
+  CV_Assert(matcher);
+  DEBUG_STR("Adding descriptors");
+  matcher->add(descriptors);
+  DEBUG_STR("training");
+  matcher->train();
 
   cout << "HELO" << endl;
 
   for(ever) {
     try {
-      EStatus status = doIt(knn, wmb, ids);
+      EStatus status = doIt(matcher, wmb, ids);
       switch(status) {
       case EStatus::OK:
         cout << "ACK" << endl;

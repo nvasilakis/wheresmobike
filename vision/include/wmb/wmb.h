@@ -19,7 +19,7 @@ namespace wmb
 
 typedef cv::Mat_<cv::Vec3b> MatColor;
 typedef cv::Mat_<uint8_t> MatGray;
-typedef cv::Mat_<float> MatResult;
+typedef cv::Mat_<float> MatFeatures;
 typedef std::vector<cv::Vec3f> Circles;
 typedef std::vector<cv::Vec2f> Lines;
 typedef std::vector<std::string> Strings;
@@ -64,7 +64,7 @@ public:
   ~WmbVision();
 
   bool process(const MatColor &img);
-  MatResult getFeatures() const;
+  MatFeatures getFeatures() const;
 
 }; // class WmbVision
 
