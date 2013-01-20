@@ -24,7 +24,7 @@ static void readStrings(const FileNode &n, Strings &strings)
   }
   strings.resize(n.size());
   CV_Assert(n.type() == FileNode::SEQ);
-  for(int i=0; i<n.size(); ++i) {
+  for(unsigned i=0; i<n.size(); ++i) {
     CV_Assert(n[i].type() == FileNode::STR);
     n[i] >> strings[i];
   }
@@ -100,7 +100,7 @@ Bikes loadBikes(const char * const filename)
 
   DEBUG(bikesNode.size());
   Bikes bikes(bikesNode.size());
-  for(int i=0; i<bikesNode.size(); ++i) {
+  for(unsigned i=0; i<bikesNode.size(); ++i) {
     INFO(i);
     const auto &bn = bikesNode[i];
     Bike &b = bikes[i];

@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 
   Bikes bikes = loadBikes(filename);
 
-  WmbVision wmb(150.0, 75.0);
+  WmbVision wmb(150.0, 60.0);
 
   FileStorage fs("features.yaml", FileStorage::WRITE);
 

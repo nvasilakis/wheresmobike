@@ -76,14 +76,13 @@ bool WmbVision::findWheels()
     allCircles_.emplace_back(circle[0] + cols / 2, circle[1], circle[2]);
   }
 
-  assert(wheels_.size() == 2);
   wheelRadius_ = findMedianWheel<2>(allCircles_);
-  wheels_[0] = Vec3f(findMedianWheel<0>(circlesL_),
-                     findMedianWheel<1>(circlesL_),
-                     wheelRadius_);
-  wheels_[1] = Vec3f(findMedianWheel<0>(circlesR_) + cols/2,
-                     findMedianWheel<1>(circlesR_),
-                     wheelRadius_);
+  wheelL_ = Vec3f( findMedianWheel<0>(circlesL_),
+                   findMedianWheel<1>(circlesL_),
+                   wheelRadius_);
+  wheelR_ = Vec3f( findMedianWheel<0>(circlesR_) + cols/2,
+                   findMedianWheel<1>(circlesR_),
+                   wheelRadius_);
   DEBUG(wheelRadius_);
 
   return true;

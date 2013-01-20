@@ -44,8 +44,9 @@ class WmbVision
   MatColor small_;
   MatGray smallGray_;
   MatGray canny_;
-  Circles circlesL_, circlesR_, allCircles_, wheels_;
-  Lines lines_;
+  Circles circlesL_, circlesR_, allCircles_;
+  cv::Vec3f wheelL_, wheelR_;
+  Lines allLines_, linesL_, linesR_;
   double wheelRadius_;
   cv::Point2f wheelCenterL_;
   cv::Point2f wheelCenterR_;
@@ -53,8 +54,9 @@ class WmbVision
   const double cannyThreshHigh_;
   const double cannyThreshLow_;
 
-  bool findWheels();
   void proprocessImage(const MatColor& img);
+  bool findWheels();
+  bool findFork();
 
 public:
   WmbVision(const double cannyThresh0, const double cannyThresh1);

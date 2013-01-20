@@ -21,8 +21,7 @@ static const Scalar blue(255, 0, 0);
 static const Scalar green(0, 255, 0);
 static const Scalar red(0, 0, 255);
 static const Scalar fuscia(255, 0, 255);
-static const Scalar yellow(0, 200, 200);
-
+//static const Scalar yellow(0, 200, 200);
 
 void displayBike(const Bike &bike)
 {
@@ -78,16 +77,19 @@ void displayCircles(const MatGray &img, const Circles &circles, const string &na
   }
   imshow(name+" circles", rgb);
 }
-static void drawSegment(MatColor &rgb, float x0, float y0, float x1, float y1, const Scalar &color)
-{
-  Point pt0(roundToNearestInt(x0*16.0f), roundToNearestInt(y0*16.0f));
-  Point pt1(roundToNearestInt(x1*16.0f), roundToNearestInt(y1*16.0f));
-  line(rgb, pt0, pt1, color, 1, CV_AA, 4);
-}
+
+//static void drawSegment(MatColor &rgb, float x0, float y0, float x1, float y1, const Scalar &color)
+//{
+//  Point pt0(roundToNearestInt(x0*16.0f), roundToNearestInt(y0*16.0f));
+//  Point pt1(roundToNearestInt(x1*16.0f), roundToNearestInt(y1*16.0f));
+//  line(rgb, pt0, pt1, color, 1, CV_AA, 4);
+//}
 
 static void drawSegment(MatColor &rgb, const Vec4i &p, const Scalar &color)
 {
   line(rgb, Point(p[0], p[1]), Point(p[2], p[3]), color, 1, CV_AA, 0);
+  drawCircle(rgb, Vec3f(p[0], p[1], 1), fuscia);
+  drawCircle(rgb, Vec3f(p[2], p[3], 1), fuscia);
 }
 
 void displayLines(const MatGray &img, const Lines &lines, const string &name)

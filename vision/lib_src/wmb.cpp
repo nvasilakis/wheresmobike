@@ -25,21 +25,19 @@ bool WmbVision::process(const MatColor & img)
   proprocessImage(img);
   // find wheels
   if(!findWheels()) return false;
-
   // find fork
-  const int cols = canny_.cols;
-  HoughLinesP(canny_, lines_,
-      linesDistanceResolution(), linesAngleResolution(),
-      linesAccumThresh(wheelRadius_), minLineLength(wheelRadius_),
-      maxLineGap(wheelRadius_));
+//  if(!findFork()) return false;
+  findFork();
 
 #ifndef NDEBUG
   imshow("img", img);
   imshow("smallBlurred", smallGray_);
   imshow("canny", canny_);
   displayCircles(smallGray_, allCircles_, "all");
-  displayCircles(smallGray_, wheels_, "wheels");
-  displayLines(smallGray_, lines_, "all");
+  displayCircles(smallGray_, Circles({wheelL_, wheelR_}), "wheels");
+  displayLines(canny_, allLines_, "all");
+  displayLines(canny_, linesL_, "left");
+  displayLines(canny_, linesR_, "right");
   waitKey(0);
 #endif
 
@@ -51,10 +49,10 @@ cv::Mat_<double> WmbVision::getFeatures() const
 
   cv::Mat_<double> res(2, 1);
 
-  double x1 = wheels_[0][0];
-  double y1 = wheels_[0][1];
-  double x2 = wheels_[1][0];
-  double y2 = wheels_[1][1];
+  double x1 = wheelL_[0];
+  double y1 = wheelL_[1];
+  double x2 = wheelR_[0];
+  double y2 = wheelR_[1];
 
   double dist = sqrt((x1 - x2) * (x1 - x2) +
                      (y1 - y2) * (y1 - y2));
