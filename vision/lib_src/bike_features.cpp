@@ -22,12 +22,17 @@ namespace wmb
 
   void BikeFeatures::read(const cv::FileNode &n)
   {
-    n["id"] >> id;
+    n["postid"] >> postid;
+    n["imagename"] >> imagename;
     n["features"] >> features;
   }
 
   void BikeFeatures::write(cv::FileStorage &fs) const {
-    fs << "{" << "id" << id << "features" << features << "}";
+    fs << "{"
+        << "postid" << postid
+        << "imagename" << imagename
+        << "features" << features
+       << "}";
   }
 
 

@@ -53,7 +53,7 @@ EStatus doIt(CvKNearest &knn, WmbVision &wmb,
 
   MatResult samples;
 
-  for(int i=0; i<n; ++i) {
+  for(unsigned i=0; i<n; ++i) {
     cin >> imageFileName;
     image = imread(imageFileName, CV_LOAD_IMAGE_COLOR);
 
@@ -126,12 +126,12 @@ int main(int argc, char ** argv)
   std::vector<std::string> ids(r.size());
   MatResult responses(r.size(), 1);
 
-  for (int i = 0; i < r.size(); i++) {
+  for (unsigned i = 0; i < r.size(); i++) {
     BikeFeatures bf;
     r[i] >> bf;
-    DEBUG(bf.id);
+//    DEBUG(bf.postid);
     trainData.row(i) = bf.features;
-    ids[i] = bf.id;
+    ids[i] = bf.postid;
     responses(i) = i;
   }
 
