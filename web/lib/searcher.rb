@@ -31,7 +31,7 @@ module Searcher
       {
         :title => title ? title.content : '',
         :body => body ? body.content : '',
-        :picture => picture ? picture.content : '',
+        :picture => picture ? picture.content : nil,
         :url => url ? url.content : nil
       }
     end

@@ -47,13 +47,13 @@
 }
 
 .jumbotron {
-position: relative;
-padding: 40px 0;
-color: #fff;
-text-align: center;
-text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
-background: #020031;
-background-image:url('http://www.seas.upenn.edu/~nvas/one.png');
+    position: relative;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+    background: #020031;
+    background-image:url('http://www.seas.upenn.edu/~nvas/one.png');
 /*
 # background: -moz-linear-gradient(45deg, #020031 0%, #6d3353 100%);
 # background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6d3353));
@@ -69,6 +69,28 @@ background-image:url('http://www.seas.upenn.edu/~nvas/one.png');
 }
 
 .subhead {
-text-align: left;
-border-bottom: 1px solid #ddd;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#search-results a.no-image {
+    color: #8d8d8d;
+    font-size: 14pt;
+    text-align: center;
+    display: block;
+    line-height: 25pt;
+    border: 1px solid #999;
+    padding: 25px;
+    background-color: #eee;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    background: -webkit-linear-gradient(45deg, #eee 0%, #dcdcdc 100%);
+    background: -o-linear-gradient(45deg, #eee 0%, #dcdcdc 100%);
+    background: -ms-linear-gradient(45deg, #eee 0%, #dcdcdc 100%);
+    background: linear-gradient(45deg, #eee 0%, #dcdcdc 100%);
+}
+
+#search-results a.no-image:hover {
+    text-decoration: none;
 }
