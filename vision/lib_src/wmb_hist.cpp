@@ -63,6 +63,9 @@ void WmbVision::buildColorHistograms(const MatColor &img)
   calcHist(&hsv, 1, channels, mask,
       hist_, 2, histSize, ranges, true, // the histogram is uniform
       false);
+  double maxVal = 0.0;
+  minMaxLoc(hist_, nullptr, &maxVal, nullptr, nullptr);
+  hist_ *= (float)(1.0/maxVal);
 
 #ifndef NDEBUG
   imshow("fork mask", mask);
