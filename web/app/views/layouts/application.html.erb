@@ -8,7 +8,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="navbar" style="margin-bottom:0px">
+
+  <div class="navbar" id="show-one" style="margin-bottom:0px; display:none;">
     <div class="navbar-inner">
       <a class="brand" href="/">WheresMoBike</a>
       <ul class="nav">
@@ -18,7 +19,7 @@
     </div>
   </div>
 
-  <header class="jumbotron subhead" id="overview">
+  <header class="jumbotron subhead" id="show-two" style="display:none;">
     <div class="container">
       <h1>WheresMoBike</h1>
       <p class="lead"> <span style="background-color:rgba(0, 0, 0,0.5);">WheresMoBike is a service to help people looking for their stolen
@@ -26,7 +27,7 @@
     </div>
   </header>
 
-  <div class="container">
+  <div class="container" id="show-three" style="display:none;">
     <%= yield %>
   </div>
 

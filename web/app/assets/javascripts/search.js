@@ -94,7 +94,15 @@ var WheresMoBike = {
                 return field.children('.field-description').text();
             }
         });
-
+          //$(document).ready(function(){
+            $('#show-one').fadeIn(1000, function(){
+              $('#show-two').fadeIn(1000, function(){
+                $('#show-three').fadeIn(1000, function(){
+                  gl_demo_concept();
+                });
+              });
+            });
+          //});
         $('.field input[name=date]').datepicker();
 
     });

@@ -1,32 +1,34 @@
-if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+function gl_demo_concept() {
+  if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
-var container, stats;
+  var container, stats;
 
-var w = 300;
-var h = 300;
+  var w = 300;
+  var h = 300;
 
-var camera, scene, renderer, objects;
-var particleLight, pointLight;
-var dae, skin;
+  var camera, scene, renderer, objects;
+  var particleLight, pointLight;
+  var dae, skin;
 
-var rxz = 10;
-var ry  = 2;
-var rsq = rxz*rxz + ry*ry;
-var rdelta = 0.1;
+  var rxz = 10;
+  var ry  = 2;
+  var rsq = rxz*rxz + ry*ry;
+  var rdelta = 0.1;
 
-var loader = new THREE.ColladaLoader();
-loader.options.convertUpAxis = true;
-loader.load( '/assets/bicycle.dae', function ( collada ) {
+  var loader = new THREE.ColladaLoader();
+  loader.options.convertUpAxis = true;
+  loader.load( '/assets/bicycle.dae', function ( collada ) {
 
-    dae = collada.scene;
-    skin = collada.skins[ 0 ];
+      dae = collada.scene;
+      skin = collada.skins[ 0 ];
 
-    dae.scale.x = dae.scale.y = dae.scale.z = 0.15;
-    dae.updateMatrix();
+      dae.scale.x = dae.scale.y = dae.scale.z = 0.15;
+      dae.updateMatrix();
 
-    init();
-    animate();
-} );
+      init();
+      animate();
+  } );
+}
 
 function init() {
     container = $('#loading-search .image');
