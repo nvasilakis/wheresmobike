@@ -13,12 +13,13 @@ var WheresMoBike = {
         });
     },
 
-    hideLoadingAnimation: function () {
+    hideSearchForm: function () {
         var form = $(this),
             search = $('#search'),
             loadingBox = $('#loading-search');
         if (WheresMoBike.loadingAnimationComplete) {
             loadingBox.fadeOut();
+            search.hide();
             WheresMoBike.loadingAnimationComplete = false;
         } else {
             form.stop();
@@ -70,7 +71,7 @@ var WheresMoBike = {
         .delegate('#search-form', 'ajax:before',
                   WheresMoBike.showLoadingAnimation)
         .delegate('#search-form', 'ajax:complete',
-                  WheresMoBike.hideLoadingAnimation)
+                  WheresMoBike.hideSearchForm)
 
         .delegate('#picture-select', 'click', function () {
             $('input[name=picture]').click();

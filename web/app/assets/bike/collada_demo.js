@@ -26,14 +26,10 @@ loader.load( '/assets/bicycle.dae', function ( collada ) {
 
     init();
     animate();
-
 } );
 
 function init() {
-
-    container = document.createElement( 'div' );
-    document.body.appendChild( container );
-
+    container = $('#loading-search .image');
     camera = new THREE.PerspectiveCamera( 45, w /
                                           h, 1, 2000 );
     camera.position.set( 2, 2, 3 );
@@ -67,10 +63,10 @@ function init() {
     //				pointLight.position = particleLight.position;
     //				scene.add( pointLight );
 
-                                renderer = new THREE.WebGLRenderer();
-    renderer.setSize( w, h);
+    renderer = new THREE.WebGLRenderer();
+    renderer.setSize(w, h);
 
-    container.appendChild( renderer.domElement );
+    container.append($(renderer.domElement));
 
     stats = new Stats();
     stats.domElement.style.position = 'absolute';
@@ -80,7 +76,7 @@ function init() {
     //
 
     window.addEventListener( 'resize', onWindowResize, false );
-    document.addEventListener( 'keydown', onKeyDown, false );    
+    document.addEventListener( 'keydown', onKeyDown, false );
 }
 
 function onWindowResize() {
@@ -97,79 +93,79 @@ var t = 0;
 var clock = new THREE.Clock();
 
 function animate() {
-    
+
     var delta = clock.getDelta();
-    
+
     requestAnimationFrame( animate );
-    
+
     if ( t > 1 ) t = 0;
-    
+
     if ( skin ) {
-        
-	// guess this can be done smarter...
-        
-	// (Indeed, there are way more frames than needed and interpolation is not used at all
-	//  could be something like - one morph per each skinning pose keyframe, or even less,
-	//  animation could be resampled, morphing interpolation handles sparse keyframes quite well.
-	//  Simple animation cycles like this look ok with 10-15 frames instead of 100 ;)
-        
-	for ( var i = 0; i < skin.morphTargetInfluences.length; i++ ) {
-            
-	    skin.morphTargetInfluences[ i ] = 0;
-            
-	}
-        
-	skin.morphTargetInfluences[ Math.floor( t * 30 ) ] = 1;
-        
-	t += delta;
-        
+
+        // guess this can be done smarter...
+
+        // (Indeed, there are way more frames than needed and interpolation is not used at all
+        //  could be something like - one morph per each skinning pose keyframe, or even less,
+        //  animation could be resampled, morphing interpolation handles sparse keyframes quite well.
+        //  Simple animation cycles like this look ok with 10-15 frames instead of 100 ;)
+
+        for ( var i = 0; i < skin.morphTargetInfluences.length; i++ ) {
+
+            skin.morphTargetInfluences[ i ] = 0;
+
+        }
+
+        skin.morphTargetInfluences[ Math.floor( t * 30 ) ] = 1;
+
+        t += delta;
+
     }
-    
+
     render();
     stats.update();
 
 }
 
 function onKeyDown ( event ) {
-    
+
     switch( event.keyCode ) {
-        
+
     case 38: /* Up Arrow */
-        
+
         ry += rdelta;
         if (ry > 5) {
             ry = 5;
-        }        
+        }
         rxz = Math.sqrt(rsq - ry*ry);
-	break;
-        
+        break;
+
     case 40: /* Down Arrow */
-        
+
         if (ry < -5) {
             ry = -5;
         }
         ry -= rdelta;
-        rxz = Math.sqrt(rsq - ry*ry);        
-	break;
-        
+        rxz = Math.sqrt(rsq - ry*ry);
+        break;
+
     }
-    
+
 };
 
 function render() {
-    
+
     var timer = Date.now() * 0.0010;
-    
+
     camera.position.x = Math.cos( timer ) * rxz;
     camera.position.y = ry;
     camera.position.z = Math.sin( timer ) * rxz;
-    
+
     camera.lookAt( scene.position );
-    
+
     //				particleLight.position.x = Math.sin( timer * 4 ) * 3009;
     //				particleLight.position.y = Math.cos( timer * 5 ) * 4000;
     //				particleLight.position.z = Math.cos( timer * 4 ) * 3009;
-    
+
     renderer.render( scene, camera );
-    
+
 }
