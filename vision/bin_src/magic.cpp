@@ -86,7 +86,7 @@ int main(int argc, char ** argv)
     BikeFeatures bf;
     r[i] >> bf;
     trainData.row(i) = bf.features;
-    ids[i] = bf.id;
+    ids[i] = bf.postid;
     responses(i) = i;
   }
 

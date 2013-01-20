@@ -17,7 +17,8 @@ namespace wmb
 
   struct BikeFeatures
   {
-    std::string id;
+    std::string postid;
+    std::string imagename;
     cv::Mat_<double> features;
 
     void read(const cv::FileNode &n);
