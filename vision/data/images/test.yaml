@@ -1,0 +1,595 @@
+
+   -
+      postid: "http://nwga.craigslist.org/bik/3549999097.html"
+      imagename: "3E63F93He5Id5L15Ead1g760cab3d7a041f14.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.5852427581913251e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://nwga.craigslist.org/bik/3549999097.html"
+      imagename: "3E13G83Kf5N85I75J3d1geb39140e056f1880.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.8191876878633298e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://macon.craigslist.org/bik/3554948390.html"
+      imagename: "3Ge3Le3J35L85K95Had1i08d29ae4e6331259.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.8572963591515982e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://macon.craigslist.org/bik/3554948390.html"
+      imagename: "3Gd3Lf3N15L85N35Mdd1i7d7460f071d61b1b.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7674750292590339e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://brunswick.craigslist.org/bik/3542623230.html"
+      imagename: "3Fd3J93Hc5L65I85G8d1df583c581262611c8.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.6119636216092768e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://athensga.craigslist.org/bik/3509195575.html"
+      imagename: "3E23I33Fd5Kf5F65U2cct050e6fe0d58912d7.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7300574172378633e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://athensga.craigslist.org/bik/3553170435.html"
+      imagename: "3k63G53Hf5Ga5Ef5K8d1h00654929359e1b61.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.8476314369680050e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://albanyga.craigslist.org/bik/3504757449.html"
+      imagename: "3E23M63Ic5N15I25Ebccraeda331c5fb114bd.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.9736036905342950e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://tallahassee.craigslist.org/bik/3541921612.html"
+      imagename: "3Ga3Id3F95N95I65Hcd1c69fe3afc8af3137a.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.8928657845015054e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://tallahassee.craigslist.org/bid/3556793642.html"
+      imagename: "3K13Lf3m25E65K45J2d1jcd001674440e191d.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7873164383999105e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://tallahassee.craigslist.org/bid/3556793642.html"
+      imagename: "3K13I53J95K65Ha5Mdd1jc7ce0611bfd01f94.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.8595064041462348e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://spacecoast.craigslist.org/bik/3557699081.html"
+      imagename: "3J53oa3Ha5N15H65Jfd1jf0c09ca45e891f83.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.8226622982113042e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://sarasota.craigslist.org/bid/3552881152.html"
+      imagename: "3G53Fb3J75Ic5Ef5K7d1h224d42f62d4419af.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.8159988084261950e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://sarasota.craigslist.org/bid/3542988207.html"
+      imagename: "3G83Ib3H45L85G45Jbd1d55c4c27d1db41d83.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.9226042706736749e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://orlando.craigslist.org/bik/3557844750.html"
+      imagename: "3Le3Mb3Fb5G85K65J3d1jca7240e2a75a188f.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.0116666307650974e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://orlando.craigslist.org/bik/3557871311.html"
+      imagename: "3Ld3Ic3Ja5I55Gc5Jdd1j7f0f84add38518ac.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7149988056736118e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://okaloosa.craigslist.org/bik/3527533389.html"
+      imagename: "3F33Jb3N35G35K95Mbd169c050671c3a11546.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.6283936215290932e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://okaloosa.craigslist.org/bik/3527533389.html"
+      imagename: "3L33J23Hb5G15Y55Mfd1614502c5640921f0d.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.4617296457290649e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://okaloosa.craigslist.org/bik/3527533389.html"
+      imagename: "3E23Fa3Nd5G25Kc5F5d1654ad7a73090610e0.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.0151569927232841e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://okaloosa.craigslist.org/bik/3527533389.html"
+      imagename: "3Eb3Gb3N35Nc5Fe5Jbd16dbb3ff72f64f1d89.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.3978372203533352e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://okaloosa.craigslist.org/bik/3527533389.html"
+      imagename: "3G33Mc3H45Nb5H15Jdd1621b53f7508eb1470.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.6892048276278674e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://ocala.craigslist.org/bik/3557364368.html"
+      imagename: "3E53Ff3Jb5L75G55H2d1j05c31da7cd091e42.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7800551470529894e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://gainesville.craigslist.org/bik/3557438497.html"
+      imagename: "3G73M63I15I55Le5H4d1jbfa924de4b7310fa.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.3370881609188779e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://gainesville.craigslist.org/bik/3557438497.html"
+      imagename: "3E83K83I35Ff5Jd5M3d1j08f4973c109a1d18.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.8725868438554336e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://gainesville.craigslist.org/bik/3557438497.html"
+      imagename: "3Gb3M43I45Kf5Fa5H9d1jdb1087bf0eb3149e.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.0284832931345262e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://fortmyers.craigslist.org/lee/bik/3557544582.html"
+      imagename: "3E43Kf3I75Nf5K85Fed1j8bcbd8af42881290.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7051179101819561e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://keys.craigslist.org/bik/3554676232.html"
+      imagename: "3K53Jd3o05Ne5I25H8d1i9bd1d99875f41348.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.3613961893360594e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://keys.craigslist.org/bik/3557660378.html"
+      imagename: "3k73me3F75Ia5N75Jad1j50667136efbf1562.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.5709271816775142e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://daytona.craigslist.org/bik/3557487222.html"
+      imagename: "3G43M13H25Ic5G75K3d1j1957f4903914167b.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.6374355638550127e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://washingtondc.craigslist.org/nva/bik/3557854996.html"
+      imagename: "3G43I73Ma5N35E55Hbd1j17c9730b92c219e1.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.9919834220303348e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://nwct.craigslist.org/bik/3528816708.html"
+      imagename: "3Gc3Me3Ia5L95G65E9d165f1e0c97cf06134c.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7255082166752836e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://rockies.craigslist.org/bik/3556165235.html"
+      imagename: "3n13E93Hd5G25K35Jad1i448599e8fe6513e0.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.6830465877437232e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://cosprings.craigslist.org/bik/3557769705.html"
+      imagename: "3Kb3N33H95Ed5K85Had1jd363328617ce1545.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7163167024623769e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://cosprings.craigslist.org/bik/3557769705.html"
+      imagename: "3L13Ia3H65Nc5I95L2d1j39fec3ef5d7118ba.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.6423469738539462e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://cosprings.craigslist.org/bik/3557769705.html"
+      imagename: "3Lc3M13o35L65N85Kcd1jca42d24af42e1d04.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.9816682284487511e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://cosprings.craigslist.org/bik/3557769705.html"
+      imagename: "3E83K63Hd5Nf5I85M2d1jcba6ea5780771c86.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7560942954024042e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://yubasutter.craigslist.org/bik/3557356871.html"
+      imagename: "3K33Me3I15Nb5Ib5Ebd1j9fb0e9e7094016e9.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.4064493476459256e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://reno.craigslist.org/bik/3494891038.html"
+      imagename: "3Gd3K23Nc5N75Lc5Jfccl57ac3d42862312f2.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.8927461853973024e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://santabarbara.craigslist.org/bik/3539256033.html"
+      imagename: "3G73Ke3F25L55E95Kcd1ba30faf3b88321cd7.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.6448583297167993e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://slo.craigslist.org/bik/3512800709.html"
+      imagename: "3F93N13H75Kb5Fa5H9ccv4e1236c18a481b01.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.4923615949760292e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://sandiego.craigslist.org/csd/bik/3547585836.html"
+      imagename: "3M13J83H95N35H95Jad1fd5d4ea6ab36e1d74.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.4406496516416978e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://redding.craigslist.org/bik/3514391897.html"
+      imagename: "3K63Lc3H65I45L95F5d113ecb728596b11020.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.6647987315464328e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://orangecounty.craigslist.org/bik/3557869254.html"
+      imagename: "3E23M33N35N65Fb5Mdd1jf76c5adbb2ad1360.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7808402561794315e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://monterey.craigslist.org/bik/3550549987.html"
+      imagename: "3Ka3F63Na5N15Id5Mfd1gaf977ddb222d1b50.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7637119683195316e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://monterey.craigslist.org/bik/3550549987.html"
+      imagename: "3G53M83He5Lc5G25M3d1g9eae01b9a9971715.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.0653018699342111e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://monterey.craigslist.org/bik/3530220973.html"
+      imagename: "3E23L43M25I35V05J4d17652b2b41d26a1ba5.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.4124065199061393e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://merced.craigslist.org/bik/3557639681.html"
+      imagename: "3nc3K33Jd5N95M75J5d1j34b13589a3e0169a.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.9317753959104115e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://imperial.craigslist.org/bik/3535020980.html"
+      imagename: "3K83Fc3N95Le5Fc5Had19504c28ccd9b91734.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7759444574850406e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://imperial.craigslist.org/bik/3535020980.html"
+      imagename: "3K73N93Hd5Ie5Ff5M9d19e1d555d6b04415f9.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7112486247367318e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://imperial.craigslist.org/bik/3516703908.html"
+      imagename: "3Kd3Mf3I65Ic5Ha5Jed12b6c515a231a81077.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.8663412871501370e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://fresno.craigslist.org/bik/3552743861.html"
+      imagename: "3Gf3I93N15If5G25Mdd1h2a4a959522ba1cea.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7504120091992645e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://fresno.craigslist.org/bik/3552830029.html"
+      imagename: "3Ee3Mc3H35L15E45Jbd1h3be25043d93d1b03.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.3954492394280211e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://texarkana.craigslist.org/bik/3538121185.html"
+      imagename: "3Ga3M63Ja5Lc5H15M9d1b0f49cd61083b1406.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.1418063952370081e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://jonesboro.craigslist.org/bik/3511917559.html"
+      imagename: "3G43F13o55Ie5T55F1ccu6d352fb67b311acf.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.8481473425799836e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://fortsmith.craigslist.org/bik/3493808937.html"
+      imagename: "3E33Ld3Jb5F35J65Maccl1924d97a3252108b.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.4173854306327328e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://tucson.craigslist.org/bik/3557859970.html"
+      imagename: "3mf3L73Fc5If5N45J8d1jfd10c410b9cf1429.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7911967461445553e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://sierravista.craigslist.org/bik/3527533934.html"
+      imagename: "3E73Lb3N85Ie5E85H6d1653feb57c66df1660.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.5788625193711107e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://phoenix.craigslist.org/evl/bik/3507006504.html"
+      imagename: "3Ef3J13Ha5N15L75P1ccsc589d47838201f9d.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.1967309926587351e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://phoenix.craigslist.org/evl/bik/3507006504.html"
+      imagename: "3G23m53F55O25F45Hccctd872eeebc46e15c6.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.0477844699351453e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://juneau.craigslist.org/bik/3488018499.html"
+      imagename: "3mb3Lc3Jf5Lf5M45J3cci0c2073064e2e1c5e.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.5608213971443248e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://anchorage.craigslist.org/bik/3557699513.html"
+      imagename: "3Ee3G53Ha5G15E25K6d1j438ff2937e0a1eff.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.9301239945710572e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://tuscaloosa.craigslist.org/bik/3485760466.html"
+      imagename: "3E43K33Na5Nf5Lb5H3ccheff3726c0fae163d.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 3.2402444063283753e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://shoals.craigslist.org/bik/3490082899.html"
+      imagename: "3Gc3F33o55I55Ke5J5ccjd1beec852da21036.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.5855477923007081e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://shoals.craigslist.org/bik/3515380686.html"
+      imagename: "3n43Jc3N95L45K25Ffd1109c2f8c648f813b9.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.9421336810748744e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://shoals.craigslist.org/bik/3536933284.html"
+      imagename: "3K63M33Nd5Lf5G85Mcd1a494c795cf26a10c9.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.7415076113723502e-01, 4.2420000000000002e+01 ]
+
+   -
+      postid: "http://shoals.craigslist.org/bik/3536978616.html"
+      imagename: "3nf3F33Jd5E75Fe5Jbd1ad346168916671e7c.jpg"
+      features: !!opencv-matrix
+         rows: 2
+         cols: 1
+         dt: d
+         data: [ 2.6232628297093724e-01, 4.2420000000000002e+01 ]
+
