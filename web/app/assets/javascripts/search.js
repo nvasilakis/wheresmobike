@@ -37,15 +37,22 @@ var WheresMoBike = {
             searchSummary = resultsDiv.children('.summary');
 
         var pictureUrl = response['search']['picture'];
+        var pictureProcUrl = response['search']['picture_proc'];
 
         resultsUl.empty();
 
         if (pictureUrl) {
-            searchSummary.children('.image').html(
+            var imageDiv = searchSummary.children('.image');
+            imageDiv.empty();
+            imageDiv.append($(
                 '<img src="' + pictureUrl + '" ' +
                      'alt="' + response['search']['description'] + '" ' +
                      'title="' + response['search']['description'] + '" />'
-            );
+            ));
+            imageDiv.append($(
+                '<img src="' + pictureProcUrl + '" ' +
+                     'alt="Analyzed image" title="Analyzed image" />'
+            ));
         } else {
             searchSummary.children('.image').empty();
             searchSummary.children('.description').text(

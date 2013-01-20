@@ -8,6 +8,7 @@ class SearchController < ApplicationController
       new_dir = "#{Rails.root}/public/uploaded"
       new_name = "#{SecureRandom.hex 16}#{@picture.original_filename}"
       @picture = "#{new_dir}/#{new_name}"
+      @picture_proc = "#{new_dir}/proc#{new_name}"
       FileUtils.cp(old_name, @picture)
     end
 
@@ -20,6 +21,7 @@ class SearchController < ApplicationController
         :date => @date
       },
       :results => Searcher.search(:picture => @picture,
+                                  :picture_proc => @picture_proc,
                                   :description => @description,
                                   :date => @date)
     }
@@ -27,6 +29,8 @@ class SearchController < ApplicationController
     if @picture.present?
       @response[:search][:picture] =
         "/uploaded/#{File.basename @picture}"
+      @response[:search][:picture_proc] =
+        "/uploaded/#{File.basename @picture_proc}"
     end
 
     # uncomment to test waiting screen
