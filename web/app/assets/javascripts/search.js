@@ -50,9 +50,14 @@ var WheresMoBike = {
     showSearchResult: function (result) {
         return '<li class="row">' +
             '<div class="span2">' +
-              '<a target="_blank" href="' + result.url + '">' +
-                '<img src="' + result.picture + '" />' +
-              '</a>' +
+              (result.picture ?
+                '<a target="_blank" href="' + result.url + '">' +
+                   '<img src="' + result.picture + '" />' +
+                '</a>' :
+                '<a target="_blank" class="no-image" ' +
+                   'href="' + result.url + '">' +
+                   'No Image Available' +
+                '</a>') +
             '</div>' +
             '<div class="span10">' +
               '<div class="title">' +

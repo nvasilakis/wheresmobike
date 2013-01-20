@@ -45,3 +45,25 @@
 #search .fields {
     margin: 40px 0 30px;
 }
+
+#search-results a.no-image {
+    color: #8d8d8d;
+    font-size: 14pt;
+    text-align: center;
+    display: block;
+    line-height: 25pt;
+    border: 1px solid #999;
+    padding: 25px;
+    background-color: #eee;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+    background: -webkit-linear-gradient(45deg, #eee 0%, #dcdcdc 100%);
+    background: -o-linear-gradient(45deg, #eee 0%, #dcdcdc 100%);
+    background: -ms-linear-gradient(45deg, #eee 0%, #dcdcdc 100%);
+    background: linear-gradient(45deg, #eee 0%, #dcdcdc 100%);
+}
+
+#search-results a.no-image:hover {
+    text-decoration: none;
+}
