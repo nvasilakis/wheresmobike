@@ -33,15 +33,15 @@ static bool isGoodLine(const Vec3f &wheel, const float maxDistSq,
   const float theta = line[1];
 
 
-//  if(leftSide) {
-//    if(theta < M_PI_2) {
-//      return false;
-//    }
-//    if(theta > M_PI_2) {
-//  } else {
-//      return false;
-//    }
-//  }
+  if(leftSide) {
+    if(theta > M_PI_2) {
+      return false;
+    }
+  } else {
+    if(theta < M_PI_2) {
+      return false;
+    }
+  }
 
   const float dx = sin(-theta);
   const float dy = cos(-theta);
@@ -92,7 +92,7 @@ bool WmbVision::findFork()
   const float maxDistSq = maxLineDistSqFromCircle(wheelRadius_);
 
   findLinesFromCircle(allLines_, wheelL_, linesL_, maxDistSq, true);
-//  findLinesFromCircle(allLines_, wheelR_, linesR_, maxDistSq, false);
+  findLinesFromCircle(allLines_, wheelR_, linesR_, maxDistSq, false);
 
   if(linesL_.empty() && linesR_.empty()) return false;
 
